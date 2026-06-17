@@ -1,1499 +1,1415 @@
 {
-    "comercio":  {
-                     "facebook":  "https://www.facebook.com/profile.php?id=61576224881126\u0026sk=about\u0026locale=es_LA",
-                     "nombre":  "Dalalex",
-                     "instagram":  "https://www.instagram.com/dalalex_3",
-                     "direccion":  "Cl. 12 #15-50, Valledupar, Cesar, Colombia",
-                     "servicio_domicilio":  {
-                                                "costo":  5000,
-                                                "disponible":  true
-                                            },
-                     "horarios":  [
-                                      {
-                                          "cierre":  "Medianoche",
-                                          "dia":  "Domingo",
-                                          "apertura":  "7:00 AM"
-                                      },
-                                      {
-                                          "cierre":  "10:00 PM",
-                                          "dia":  "Lunes",
-                                          "apertura":  "7:00 AM"
-                                      },
-                                      {
-                                          "cierre":  "10:00 PM",
-                                          "dia":  "Martes",
-                                          "apertura":  "7:00 AM"
-                                      },
-                                      {
-                                          "cierre":  "10:00 PM",
-                                          "dia":  "Miércoles",
-                                          "apertura":  "7:00 AM"
-                                      },
-                                      {
-                                          "cierre":  "10:00 PM",
-                                          "dia":  "Jueves",
-                                          "apertura":  "7:00 AM"
-                                      },
-                                      {
-                                          "cierre":  "11:00 PM",
-                                          "dia":  "Viernes",
-                                          "apertura":  "7:00 AM"
-                                      },
-                                      {
-                                          "cierre":  "11:00 PM",
-                                          "dia":  "Sábado",
-                                          "apertura":  "7:00 AM"
-                                      }
-                                  ],
-                     "horario":  "10:00 - 22:00",
-                     "telefono":  "573044097549",
-                     "estado":  "Abierto",
-                     "logo":  ""
-                 },
-    "categorias":  [
-                       {
-                           "icono":  "🍦",
-                           "nombre":  "Helados",
-                           "id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                       },
-                       {
-                           "icono":  "🥗",
-                           "nombre":  "Ensaladas",
-                           "id":  "9edbdf5f-8d95-46b6-8877-7ef0b244c9d9"
-                       },
-                       {
-                           "icono":  "🥤",
-                           "nombre":  "Malteadas",
-                           "id":  "9e745a36-89ff-4d9a-8dd9-ae8ed107f4e6"
-                       },
-                       {
-                           "icono":  "🥪",
-                           "nombre":  "Sandwich",
-                           "id":  "9e730b34-4547-4086-a602-bd1fcae43956"
-                       },
-                       {
-                           "icono":  "☕",
-                           "nombre":  "Bebidas calientes",
-                           "id":  "9e7300e2-411e-44b9-9853-1acbb8b64e22"
-                       },
-                       {
-                           "icono":  "🧊",
-                           "nombre":  "Bebidas frías",
-                           "id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                       },
-                       {
-                           "icono":  "🥛",
-                           "nombre":  "Jugos combinados",
-                           "id":  "9e745c3d-5b80-4516-a8f8-30646acf410d"
-                       },
-                       {
-                           "icono":  "🥟",
-                           "nombre":  "Fritos y horneados",
-                           "id":  "9e7300e2-8824-459d-8546-56462c3592e8"
-                       },
-                       {
-                           "icono":  "🎉",
-                           "nombre":  "Yupi :)",
-                           "id":  "9eaf819e-e098-44de-916b-6469bf88c0ca"
-                       },
-                       {
-                           "icono":  "🍺",
-                           "nombre":  "Cervezas y trago",
-                           "id":  "9ec50d35-9085-4a43-a7fa-74081681c16c"
-                       },
-                       {
-                           "icono":  "🌭",
-                           "nombre":  "Perros",
-                           "id":  "9ee3e058-fa4a-4de6-a0ff-47b4632984c8"
-                       }
-                   ],
-    "productos":  [
-                      {
-                          "id":  "9ea51660-218d-44ae-97d5-b4dd7ed7f978",
-                          "nombre":  "Cono",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/dae0fb7d-a2d0-4aa2-9d7a-975975993fdd.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3500,
-                                               "nombre":  "1 bola",
-                                               "precio":  3500
-                                           },
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "2 bolas",
-                                               "precio":  6000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9ea547ee-4e64-47e0-a1ea-dba9e03f05bd",
-                          "nombre":  "Canasta",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/071ebf98-7231-40f1-bef4-7b80b0f7600c.png",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "1 bola",
-                                               "precio":  5000
-                                           },
-                                           {
-                                               "precio_original":  8000,
-                                               "nombre":  "2 bolas",
-                                               "precio":  8000
-                                           },
-                                           {
-                                               "precio_original":  12000,
-                                               "nombre":  "3 bolas",
-                                               "precio":  12000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9eaf1df5-088c-4cb9-b838-a949b27fbb84",
-                          "nombre":  "Maxi Cono",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/be08faa3-5b5a-46b7-874c-70b2ddee732b.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  8000,
-                                               "nombre":  "2 Bolas",
-                                               "precio":  8000
-                                           },
-                                           {
-                                               "precio_original":  12000,
-                                               "nombre":  "3 Bolas",
-                                               "precio":  12000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9edbdb63-85cd-417f-989b-9d9b109875f7",
-                          "nombre":  "Banana split",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/bd6ce3a5-2057-4dbc-bb4e-26a1c32669bf.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  15000,
-                                               "nombre":  "Única",
-                                               "precio":  15000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9edbdb65-0a91-4743-97ee-69b0da179f1d",
-                          "nombre":  "Osito",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/2bb389ac-6e3d-471a-b0d2-5446c3e575eb.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  7000,
-                                               "nombre":  "Única",
-                                               "precio":  7000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9edbdb65-d88c-43ad-ac89-3e78b4e66f25",
-                          "nombre":  "Pulpito",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/4b848e68-26a3-4dde-9015-394ac66180b5.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  7000,
-                                               "nombre":  "Única",
-                                               "precio":  7000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9edbdb66-80e9-44c0-a598-aa3acc0c4aad",
-                          "nombre":  "Vaquita",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/8b983fdf-2336-4f31-9941-8fd3dc325c96.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  7000,
-                                               "nombre":  "Única",
-                                               "precio":  7000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9edbdb67-8086-4d0b-82c3-38f8321ee243",
-                          "nombre":  "Waffles con Fresas y chocolate",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/1dbb9853-3448-4294-8d7e-208cd80cf3e7.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  14000,
-                                               "nombre":  "Única",
-                                               "precio":  14000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9edbdb68-40d3-4fb5-a437-5b46aabdbf54",
-                          "nombre":  "Waffles frutal con helado",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/74e09579-e5d5-41df-880e-5867e9db4a54.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  14000,
-                                               "nombre":  "Única",
-                                               "precio":  14000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9edbdb64-33ec-4d65-856a-a3f722915c2c",
-                          "nombre":  "Copa brownie con helado",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/cd90a5cf-2172-4106-a36c-6d7e6a533591.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  12000,
-                                               "nombre":  "Única",
-                                               "precio":  12000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9edbdb68-f33c-4aea-b69b-1dc8bdf1f355",
-                          "nombre":  "Copa Quipito",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/8579f658-c1f0-4809-962b-b58e948edab4.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  13000,
-                                               "nombre":  "Única",
-                                               "precio":  13000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9edbdb69-c82f-4f15-85d1-a74ebf823b30",
-                          "nombre":  "Copa Millows",
-                          "descripcion":  "",
-                          "imagen":  "",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  13000,
-                                               "nombre":  "Única",
-                                               "precio":  13000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9edbdb6a-942f-4d62-a378-a2ad49c12175",
-                          "nombre":  "Copa galleta con helado",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/82907ef0-6467-4fd3-95de-7954a3464ab9.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  13000,
-                                               "nombre":  "Única",
-                                               "precio":  13000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9edbdb6b-626e-4185-a401-e54d6cdb1a7f",
-                          "nombre":  "Copa queso con arequipe",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/daa391d2-9ffe-4305-bc05-d42a3bb8e219.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  13000,
-                                               "nombre":  "Única",
-                                               "precio":  13000
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9f41b3be-4833-4bd5-be7f-0252e68cfcec",
-                          "nombre":  "Producto 15",
-                          "descripcion":  "",
-                          "imagen":  "",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  0,
-                                               "nombre":  "Única",
-                                               "precio":  0
-                                           }
-                                       ],
-                          "categoria_id":  "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
-                      },
-                      {
-                          "id":  "9edbdf5f-e4bb-4857-ad3c-059741ce837e",
-                          "nombre":  "personal",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/7fae146f-d978-4b67-92e3-23fc9287055e.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  16000,
-                                               "nombre":  "Única",
-                                               "precio":  16000
-                                           }
-                                       ],
-                          "categoria_id":  "9edbdf5f-8d95-46b6-8877-7ef0b244c9d9"
-                      },
-                      {
-                          "id":  "9edbdf75-ff83-466b-b834-e0a9c0fd453a",
-                          "nombre":  "Familiar",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/2ba3c86b-b11a-42f5-b13a-e593c9a86c8c.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  22000,
-                                               "nombre":  "Única",
-                                               "precio":  22000
-                                           }
-                                       ],
-                          "categoria_id":  "9edbdf5f-8d95-46b6-8877-7ef0b244c9d9"
-                      },
-                      {
-                          "id":  "9edbdfb5-9217-4158-8c95-2b399dd26fe7",
-                          "nombre":  "Copa salpicón con helado",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/2431e3f8-6b5b-44fb-8d3f-1d183ffb0dab.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  12000,
-                                               "nombre":  "Única",
-                                               "precio":  12000
-                                           }
-                                       ],
-                          "categoria_id":  "9edbdf5f-8d95-46b6-8877-7ef0b244c9d9"
-                      },
-                      {
-                          "id":  "9edbdfef-d015-4ee7-ba2c-4af6ce655c27",
-                          "nombre":  "Fresas con crema",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/9f61c4d0-d508-4a2f-9c66-b1460749dfd7.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  12000,
-                                               "nombre":  "Con helado",
-                                               "precio":  12000
-                                           },
-                                           {
-                                               "precio_original":  10000,
-                                               "nombre":  "Sin helado",
-                                               "precio":  10000
-                                           }
-                                       ],
-                          "categoria_id":  "9edbdf5f-8d95-46b6-8877-7ef0b244c9d9"
-                      },
-                      {
-                          "id":  "9e745a57-bcf9-47cb-bcd2-bfda7ece283c",
-                          "nombre":  "Sencilla",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/ad5c9a96-a410-42b0-a962-a3ec7e257fd4.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  12000,
-                                               "nombre":  "Única",
-                                               "precio":  12000
-                                           }
-                                       ],
-                          "categoria_id":  "9e745a36-89ff-4d9a-8dd9-ae8ed107f4e6"
-                      },
-                      {
-                          "id":  "9edbde70-69a5-410f-b728-bfc4f0880aa1",
-                          "nombre":  "Especial Quipito",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/2af1d1a3-0c56-4e79-9648-1a3a365e7458.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  16000,
-                                               "nombre":  "Única",
-                                               "precio":  16000
-                                           }
-                                       ],
-                          "categoria_id":  "9e745a36-89ff-4d9a-8dd9-ae8ed107f4e6"
-                      },
-                      {
-                          "id":  "9edbdeeb-17ba-4751-9514-00fc177fc469",
-                          "nombre":  "Especial chocolate",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/55ad712b-1dae-4c08-b492-d86bd4e062d9.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  16000,
-                                               "nombre":  "Única",
-                                               "precio":  16000
-                                           }
-                                       ],
-                          "categoria_id":  "9e745a36-89ff-4d9a-8dd9-ae8ed107f4e6"
-                      },
-                      {
-                          "id":  "9e730b35-5e8a-4b42-b19f-7014210a4523",
-                          "nombre":  "Sencillo",
-                          "descripcion":  "Jamón y quesillo",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/13c3c374-f655-4962-99bc-92953055d04e.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  4500,
-                                               "nombre":  "Única",
-                                               "precio":  4500
-                                           }
-                                       ],
-                          "categoria_id":  "9e730b34-4547-4086-a602-bd1fcae43956"
-                      },
-                      {
-                          "id":  "9e730c11-c5b0-4760-b5ab-c77f22eba514",
-                          "nombre":  "Sandwich de pollo",
-                          "descripcion":  "Pan jumbo, jamón, pollo, quesillo y verduras",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/81f9dbc0-876e-473c-933b-86e2d17ce016.JPG",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  7000,
-                                               "nombre":  "Única",
-                                               "precio":  7000
-                                           }
-                                       ],
-                          "categoria_id":  "9e730b34-4547-4086-a602-bd1fcae43956"
-                      },
-                      {
-                          "id":  "9e730c13-0dc9-4242-8428-acd53c9d2e64",
-                          "nombre":  "Sandwich Cubano",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/566474ea-6325-4afe-9ad2-4add61a7c260.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  9000,
-                                               "nombre":  "Única",
-                                               "precio":  9000
-                                           }
-                                       ],
-                          "categoria_id":  "9e730b34-4547-4086-a602-bd1fcae43956"
-                      },
-                      {
-                          "id":  "9e7300e2-5188-416d-b018-7319da56e282",
-                          "nombre":  "Café",
-                          "descripcion":  "cafe negro",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/9eea266c-5a00-42be-b96a-a6367b02e8bd.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  1000,
-                                               "nombre":  "Pequeño",
-                                               "precio":  1000
-                                           },
-                                           {
-                                               "precio_original":  2000,
-                                               "nombre":  "Juan valdez",
-                                               "precio":  2000
-                                           },
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Cafe expresso",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-411e-44b9-9853-1acbb8b64e22"
-                      },
-                      {
-                          "id":  "9e7300e2-7b01-4b03-bb48-ad6d2722ab0b",
-                          "nombre":  "Café con leche",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/5737a150-2380-4443-8e8f-d9dfa0cb1f76.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-411e-44b9-9853-1acbb8b64e22"
-                      },
-                      {
-                          "id":  "9e7302b3-beaf-477d-bd27-fc58432b9f70",
-                          "nombre":  "Aromática",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/0940effd-a0b3-4d6d-829a-bf21a225855d.png",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  2000,
-                                               "nombre":  "Única",
-                                               "precio":  2000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-411e-44b9-9853-1acbb8b64e22"
-                      },
-                      {
-                          "id":  "9e73039c-50f2-40b3-9997-87a3472fe463",
-                          "nombre":  "Milo caliente",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/7b0bc12b-927c-4e80-9dda-8ccf19c2549b.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3500,
-                                               "nombre":  "Única",
-                                               "precio":  3500
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-411e-44b9-9853-1acbb8b64e22"
-                      },
-                      {
-                          "id":  "9e730e14-26c5-4e90-b20d-c21ed29f18d1",
-                          "nombre":  "Capuchino",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/c804d55c-1072-4b38-a549-a2a781067959.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Única",
-                                               "precio":  5000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-411e-44b9-9853-1acbb8b64e22"
-                      },
-                      {
-                          "id":  "9e7300e2-ac5e-46f2-99c1-71c36337e4ba",
-                          "nombre":  "Agua",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/aa031329-b0db-4b28-a487-c90a10215a70.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  1000,
-                                               "nombre":  "Pequeña",
-                                               "precio":  1000
-                                           },
-                                           {
-                                               "precio_original":  1000,
-                                               "nombre":  "Pequeña con gas",
-                                               "precio":  1000
-                                           },
-                                           {
-                                               "precio_original":  2000,
-                                               "nombre":  "Mediana",
-                                               "precio":  2000
-                                           },
-                                           {
-                                               "precio_original":  1700,
-                                               "nombre":  "Saborizada manzana",
-                                               "precio":  1700
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9e7300e2-b656-41bb-a206-3aaf9243b47a",
-                          "nombre":  "Coca-Cola",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/d7ae2f02-8ca4-442e-a298-698d016388fb.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  4000,
-                                               "nombre":  "Personal 400 ml",
-                                               "precio":  4000
-                                           },
-                                           {
-                                               "precio_original":  4000,
-                                               "nombre":  "Litro",
-                                               "precio":  4000
-                                           },
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "1.5 L",
-                                               "precio":  6000
-                                           },
-                                           {
-                                               "precio_original":  12000,
-                                               "nombre":  "3 L",
-                                               "precio":  12000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9e90e283-6d30-461a-81ef-9f9647470028",
-                          "nombre":  "Soda",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/01e06e57-9c70-4136-9bc3-0b5f125ab082.png",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3500,
-                                               "nombre":  "Única",
-                                               "precio":  3500
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9e90e257-6cc5-410d-adb9-e03c8ec74991",
-                          "nombre":  "Pulp",
-                          "descripcion":  "",
-                          "imagen":  "",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  2000,
-                                               "nombre":  "Única",
-                                               "precio":  2000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9e730583-573f-4e16-b4f4-c2170f121459",
-                          "nombre":  "Jugos naturales en agua",
-                          "descripcion":  ".",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/7a9ed4a0-d683-448a-a6aa-f7c650af61c5.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Fresa",
-                                               "precio":  5000
-                                           },
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Tomate de árbol",
-                                               "precio":  5000
-                                           },
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Guanabana",
-                                               "precio":  5000
-                                           },
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Guayaba",
-                                               "precio":  5000
-                                           },
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Maracuyá",
-                                               "precio":  5000
-                                           },
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Mandarina",
-                                               "precio":  5000
-                                           },
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Melón",
-                                               "precio":  5000
-                                           },
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Mora",
-                                               "precio":  5000
-                                           },
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Naranja",
-                                               "precio":  5000
-                                           },
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Lulo",
-                                               "precio":  5000
-                                           },
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Piña",
-                                               "precio":  5000
-                                           },
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Otra opción",
-                                               "precio":  5000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9e730585-aa50-45b3-a01a-7bdcd9f7d275",
-                          "nombre":  "Jugos en leche",
-                          "descripcion":  ".",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/86a23501-8e9e-464c-8818-d56e3f85dd09.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Banano",
-                                               "precio":  6000
-                                           },
-                                           {
-                                               "precio_original":  7000,
-                                               "nombre":  "Cerelac",
-                                               "precio":  7000
-                                           },
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Guanábana",
-                                               "precio":  6000
-                                           },
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Fresa",
-                                               "precio":  6000
-                                           },
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Maracuya",
-                                               "precio":  6000
-                                           },
-                                           {
-                                               "precio_original":  6500,
-                                               "nombre":  "Milo",
-                                               "precio":  6500
-                                           },
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Mora",
-                                               "precio":  6000
-                                           },
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Níspero",
-                                               "precio":  6000
-                                           },
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Lulo",
-                                               "precio":  6000
-                                           },
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Zapote",
-                                               "precio":  6000
-                                           },
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Otra opción",
-                                               "precio":  6000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9e91914b-bb21-40d0-9fc7-4fcc8bc38ba9",
-                          "nombre":  "Postobón",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/017e90b3-09ad-4880-af43-9cb063c01fd4.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  1500,
-                                               "nombre":  "250 ml",
-                                               "precio":  1500
-                                           },
-                                           {
-                                               "precio_original":  3500,
-                                               "nombre":  "Litro",
-                                               "precio":  3500
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9e91922f-3d9e-47c1-b6a9-9e4672cc6b86",
-                          "nombre":  "Pony",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/675f424a-8bb2-4899-8b40-bd1ebb9b4144.png",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9ef1e3ac-dfd2-4550-85b1-5d6a06837f6e",
-                          "nombre":  "Pony mini",
-                          "descripcion":  "",
-                          "imagen":  "",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  2000,
-                                               "nombre":  "Única",
-                                               "precio":  2000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9f1f2c03-4058-4783-ab6e-751d4124563e",
-                          "nombre":  "Pony litro",
-                          "descripcion":  "",
-                          "imagen":  "",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Única",
-                                               "precio":  5000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9e9193f8-4a06-412e-b3ad-e1443ba4d845",
-                          "nombre":  "California",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/bda99660-e52a-43e9-809b-441fbee95e98.png",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9ee30292-d774-4538-8a81-37212668397d",
-                          "nombre":  "Jugo hit",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/978e2147-09d0-4190-a596-19debcf507b5.png",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  2000,
-                                               "nombre":  "Única",
-                                               "precio":  2000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9e91958d-d546-4904-a25b-84f607f3f294",
-                          "nombre":  "Speed max",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/47aa8f2a-c5eb-48b6-8885-8c226dc16267.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  2200,
-                                               "nombre":  "Única",
-                                               "precio":  2200
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9e919697-b4fb-4dab-95f2-b09f63a9e9f9",
-                          "nombre":  "Cola y pola",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/df544faa-95a3-4a83-a27c-2d1cd2ddc5a5.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9e9d633a-3168-498f-9d87-b16e81466343",
-                          "nombre":  "Gatorade",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/0147eed0-7c3a-4932-98f3-1e077eba5d8c.png",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  4000,
-                                               "nombre":  "Única",
-                                               "precio":  4000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9ec50eb5-589f-4752-aa50-72418a2a3dbc",
-                          "nombre":  "Electrolic",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/e7b9dd36-9591-42b4-900e-81c1bbc25e1b.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  11000,
-                                               "nombre":  "Única",
-                                               "precio":  11000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9ed4047b-9f05-4db8-8e85-c3b6158104f6",
-                          "nombre":  "Ginger",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/e9e54e7e-f89b-4f3d-b160-8f1edf5c47ca.png",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3500,
-                                               "nombre":  "Única",
-                                               "precio":  3500
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
-                      },
-                      {
-                          "id":  "9e745c3d-ad08-480c-b0cb-236763581870",
-                          "nombre":  "Fresa, naranja",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/48f327c7-1af2-403a-a121-b0720f26c19f.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Única",
-                                               "precio":  6000
-                                           }
-                                       ],
-                          "categoria_id":  "9e745c3d-5b80-4516-a8f8-30646acf410d"
-                      },
-                      {
-                          "id":  "9e745cd7-d470-4d3e-91d7-28fe3489e25f",
-                          "nombre":  "Milo, banano",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/af6b63d6-f81b-4d1d-ba4a-3b108a4ee0fc.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  7000,
-                                               "nombre":  "Única",
-                                               "precio":  7000
-                                           }
-                                       ],
-                          "categoria_id":  "9e745c3d-5b80-4516-a8f8-30646acf410d"
-                      },
-                      {
-                          "id":  "9e745e48-7863-4fb2-bdd7-eb0d47252d11",
-                          "nombre":  "Lulo, maracuyá",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/fd2e7f3a-3f89-4071-9e79-d94f4405beb7.png",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Agua",
-                                               "precio":  5000
-                                           },
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Leche",
-                                               "precio":  6000
-                                           }
-                                       ],
-                          "categoria_id":  "9e745c3d-5b80-4516-a8f8-30646acf410d"
-                      },
-                      {
-                          "id":  "9e745d04-0855-4800-a44e-b014bd49ec91",
-                          "nombre":  "Frutos rojos",
-                          "descripcion":  "Fresa, mora, cereza.",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/53c4534d-ef91-4282-b715-efa9677c83b7.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Única",
-                                               "precio":  6000
-                                           }
-                                       ],
-                          "categoria_id":  "9e745c3d-5b80-4516-a8f8-30646acf410d"
-                      },
-                      {
-                          "id":  "9e745d46-034b-48fc-b934-16a542b06a77",
-                          "nombre":  "Frutos Amarillos",
-                          "descripcion":  "Piña, maracuyá y naranja",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/4565bcbf-ca0a-4f30-b367-e6f5aef49a4d.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Única",
-                                               "precio":  6000
-                                           }
-                                       ],
-                          "categoria_id":  "9e745c3d-5b80-4516-a8f8-30646acf410d"
-                      },
-                      {
-                          "id":  "9ee18242-30b7-4a1e-ad71-fef068681d58",
-                          "nombre":  "Lulo, fresa",
-                          "descripcion":  "agua",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/a68e08b2-47a0-4496-b53f-224ef5ec57ed.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Única",
-                                               "precio":  5000
-                                           }
-                                       ],
-                          "categoria_id":  "9e745c3d-5b80-4516-a8f8-30646acf410d"
-                      },
-                      {
-                          "id":  "9ee1a48a-29f6-4288-81e9-5a95b0881866",
-                          "nombre":  "Maracuya, mango",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/75200fe2-6a37-4696-8d7c-2390a1f31870.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Única",
-                                               "precio":  5000
-                                           }
-                                       ],
-                          "categoria_id":  "9e745c3d-5b80-4516-a8f8-30646acf410d"
-                      },
-                      {
-                          "id":  "9e7300e2-9282-401d-a947-5cb3f8fedaa9",
-                          "nombre":  "Pastelitos",
-                          "descripcion":  "Pollo Hawaiana",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/be47e244-60c4-463a-a70e-56f5f93fe9e6.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-8824-459d-8546-56462c3592e8"
-                      },
-                      {
-                          "id":  "9e730a7a-1e7a-47b9-a420-8933ef9f5277",
-                          "nombre":  "Deditos",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/cc551078-4ece-4e4e-a55f-d44e9cb6cba7.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-8824-459d-8546-56462c3592e8"
-                      },
-                      {
-                          "id":  "9e730a7b-b136-4a60-a84d-6460cfdc9b83",
-                          "nombre":  "Empanadas",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/47cf75c4-9e4d-48ad-9ee7-cd9a58a87219.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-8824-459d-8546-56462c3592e8"
-                      },
-                      {
-                          "id":  "9e730e72-a955-479c-b39a-d17a797840e2",
-                          "nombre":  "Pan de bono",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/c3e54278-fb98-4eec-9c4d-9e8879813fd8.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-8824-459d-8546-56462c3592e8"
-                      },
-                      {
-                          "id":  "9e730e88-04f5-403a-a5f9-eb7fa81ab6b3",
-                          "nombre":  "Arepa",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/6a5a7fe8-0b04-40e9-8955-294bbb79268e.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  4000,
-                                               "nombre":  "De queso",
-                                               "precio":  4000
-                                           },
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Rellena de pollo",
-                                               "precio":  6000
-                                           },
-                                           {
-                                               "precio_original":  6000,
-                                               "nombre":  "Rellena de carne",
-                                               "precio":  6000
-                                           },
-                                           {
-                                               "precio_original":  0,
-                                               "nombre":  "Otra opción",
-                                               "precio":  0
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-8824-459d-8546-56462c3592e8"
-                      },
-                      {
-                          "id":  "9e730ec6-de38-4b9c-b9d9-b4b6223cc43b",
-                          "nombre":  "Buñuelo",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/80bc6c5c-c836-4ea6-a04e-08063ecd0747.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-8824-459d-8546-56462c3592e8"
-                      },
-                      {
-                          "id":  "9e730f7e-524b-4d58-8d45-7e14f1330c8b",
-                          "nombre":  "Chorizo con bollo",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/1f7c7b4b-fefa-425a-bc84-8b7abe4d561c.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Única",
-                                               "precio":  5000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-8824-459d-8546-56462c3592e8"
-                      },
-                      {
-                          "id":  "9e96525f-9103-4a36-9fdf-a5da4d345648",
-                          "nombre":  "Patacón",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/540f4b10-0807-415f-aee5-8449b3d5099b.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-8824-459d-8546-56462c3592e8"
-                      },
-                      {
-                          "id":  "9e9ab18a-a044-492f-8aa6-7d81104bc5d6",
-                          "nombre":  "Pasteles",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/56a99a4d-a4a4-4945-903c-1179a4d77e51.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  11000,
-                                               "nombre":  "Única",
-                                               "precio":  11000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-8824-459d-8546-56462c3592e8"
-                      },
-                      {
-                          "id":  "9e9e53ea-0458-4d60-aacd-8bb770ee67f6",
-                          "nombre":  "Papa",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/dc396f13-5a60-4e49-ae23-d416146dadd4.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  2500,
-                                               "nombre":  "Única",
-                                               "precio":  2500
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-8824-459d-8546-56462c3592e8"
-                      },
-                      {
-                          "id":  "9ed6d0ba-b071-4e70-9da1-485db1122aff",
-                          "nombre":  "Rosquete",
-                          "descripcion":  "",
-                          "imagen":  "",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9e7300e2-8824-459d-8546-56462c3592e8"
-                      },
-                      {
-                          "id":  "9eeba045-c51f-42a5-beb0-e3599fada9cf",
-                          "nombre":  "Copelia",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/d0c661d1-39b2-41f9-ac02-4ab8baf9dd70.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  600,
-                                               "nombre":  "Única",
-                                               "precio":  600
-                                           }
-                                       ],
-                          "categoria_id":  "9eaf819e-e098-44de-916b-6469bf88c0ca"
-                      },
-                      {
-                          "id":  "9eaf81c6-fae0-4473-b7ad-427080c6439e",
-                          "nombre":  "Tozinetas",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/ccbde810-32a2-4bbb-9cb7-1d6d9a2cab6c.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  2500,
-                                               "nombre":  "Única",
-                                               "precio":  2500
-                                           }
-                                       ],
-                          "categoria_id":  "9eaf819e-e098-44de-916b-6469bf88c0ca"
-                      },
-                      {
-                          "id":  "9eaf81c9-133e-4e09-9ee1-f92d4152502c",
-                          "nombre":  "Rizadas",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/b58f82fd-4c80-4692-b757-e23f52ca3e74.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Mayonesa",
-                                               "precio":  3000
-                                           },
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Limón",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9eaf819e-e098-44de-916b-6469bf88c0ca"
-                      },
-                      {
-                          "id":  "9eaf819f-2bff-4407-b3d2-e6dd6bbaff42",
-                          "nombre":  "Golpe",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/f9a06b91-0766-478d-a1f6-478bc5bd43c1.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  8000,
-                                               "nombre":  "Mayonesa",
-                                               "precio":  8000
-                                           },
-                                           {
-                                               "precio_original":  8000,
-                                               "nombre":  "Limón",
-                                               "precio":  8000
-                                           },
-                                           {
-                                               "precio_original":  8000,
-                                               "nombre":  "Ranchero",
-                                               "precio":  8000
-                                           }
-                                       ],
-                          "categoria_id":  "9eaf819e-e098-44de-916b-6469bf88c0ca"
-                      },
-                      {
-                          "id":  "9eaf81c6-4062-435c-ac09-90eb6d8107f2",
-                          "nombre":  "Palomitas",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/88e9d012-9fbf-4246-bbb5-e4e7bbcafc70.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  2000,
-                                               "nombre":  "Única",
-                                               "precio":  2000
-                                           }
-                                       ],
-                          "categoria_id":  "9eaf819e-e098-44de-916b-6469bf88c0ca"
-                      },
-                      {
-                          "id":  "9eaf82e3-3062-4f7a-b504-a0d219fb57a2",
-                          "nombre":  "Tosti pizza",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/6839d061-1cc5-410b-b86a-5b040a5698d6.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  2000,
-                                               "nombre":  "Única",
-                                               "precio":  2000
-                                           }
-                                       ],
-                          "categoria_id":  "9eaf819e-e098-44de-916b-6469bf88c0ca"
-                      },
-                      {
-                          "id":  "9eaf83e9-fedf-4c6f-a011-62a278f9acd4",
-                          "nombre":  "Tosti empanada",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/97325414-4ac6-43c5-8e34-fbc48a7be737.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  2000,
-                                               "nombre":  "Única",
-                                               "precio":  2000
-                                           }
-                                       ],
-                          "categoria_id":  "9eaf819e-e098-44de-916b-6469bf88c0ca"
-                      },
-                      {
-                          "id":  "9eaf82e4-4aff-4ecc-8837-3edde6a02dcf",
-                          "nombre":  "Cheesee",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/15809fcb-4257-4fd5-91f1-ccf6feadb706.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  2000,
-                                               "nombre":  "Única",
-                                               "precio":  2000
-                                           }
-                                       ],
-                          "categoria_id":  "9eaf819e-e098-44de-916b-6469bf88c0ca"
-                      },
-                      {
-                          "id":  "9ec50d35-e64d-431d-8cd9-b33a5cfbee49",
-                          "nombre":  "Coronita",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/e431c4b1-1b64-4f28-bda9-a0c2a95af125.png",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  4000,
-                                               "nombre":  "Única",
-                                               "precio":  4000
-                                           }
-                                       ],
-                          "categoria_id":  "9ec50d35-9085-4a43-a7fa-74081681c16c"
-                      },
-                      {
-                          "id":  "9ed9466f-365b-4f97-9ff2-6b8af39e574a",
-                          "nombre":  "Costeña",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/95677a7a-29ac-4e10-ba84-4666f38c71e9.png",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9ec50d35-9085-4a43-a7fa-74081681c16c"
-                      },
-                      {
-                          "id":  "9ec50d4a-208d-4ae1-b448-b4e93d9d9728",
-                          "nombre":  "Aguila",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/77ee6a1b-8926-46ee-a0ea-8bf424179c87.png",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9ec50d35-9085-4a43-a7fa-74081681c16c"
-                      },
-                      {
-                          "id":  "9ed94671-31f6-49c2-8813-095265c70cf4",
-                          "nombre":  "Club colombia",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/0e8d6cd7-2726-4b41-b1f0-5e99f665ba81.png",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9ec50d35-9085-4a43-a7fa-74081681c16c"
-                      },
-                      {
-                          "id":  "9ec50db7-8bb8-4b2b-bf20-9c9fdcb56cf8",
-                          "nombre":  "Miller",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/9e873c69-3ddf-45d1-bd21-d8b63779bf13.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  3000,
-                                               "nombre":  "Única",
-                                               "precio":  3000
-                                           }
-                                       ],
-                          "categoria_id":  "9ec50d35-9085-4a43-a7fa-74081681c16c"
-                      },
-                      {
-                          "id":  "9ec50d4b-b112-45c2-9dec-8b24159e51c4",
-                          "nombre":  "Aguardiente L",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/fa7ab880-0e29-4267-936a-9a39710a0096.jpg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  70000,
-                                               "nombre":  "Única",
-                                               "precio":  70000
-                                           }
-                                       ],
-                          "categoria_id":  "9ec50d35-9085-4a43-a7fa-74081681c16c"
-                      },
-                      {
-                          "id":  "9ec50db8-f682-4276-92a6-de551a60f58d",
-                          "nombre":  "Likes",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/ecf61c1a-0d0d-45d0-ad4a-015565e698d2.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  5000,
-                                               "nombre":  "Única",
-                                               "precio":  5000
-                                           }
-                                       ],
-                          "categoria_id":  "9ec50d35-9085-4a43-a7fa-74081681c16c"
-                      },
-                      {
-                          "id":  "9ec5a3f2-9e48-44e1-9507-46263fd53f64",
-                          "nombre":  "Michelada",
-                          "descripcion":  "",
-                          "imagen":  "https://assets.olaclick.app/companies/products/images/800/25d813c6-ef02-4f0d-b52b-7ae31fa2a3ae.jpeg",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  7000,
-                                               "nombre":  "Sencilla ginger/soda",
-                                               "precio":  7000
-                                           },
-                                           {
-                                               "precio_original":  10000,
-                                               "nombre":  "Sencilla cerveza",
-                                               "precio":  10000
-                                           },
-                                           {
-                                               "precio_original":  12000,
-                                               "nombre":  "Frutos ginger/soda",
-                                               "precio":  12000
-                                           },
-                                           {
-                                               "precio_original":  15000,
-                                               "nombre":  "Frutos cerveza",
-                                               "precio":  15000
-                                           }
-                                       ],
-                          "categoria_id":  "9ec50d35-9085-4a43-a7fa-74081681c16c"
-                      },
-                      {
-                          "id":  "9ee3e059-5669-4b1e-90f5-2eb69a74e36f",
-                          "nombre":  "Sencillo",
-                          "descripcion":  "",
-                          "imagen":  "",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  10000,
-                                               "nombre":  "Única",
-                                               "precio":  10000
-                                           }
-                                       ],
-                          "categoria_id":  "9ee3e058-fa4a-4de6-a0ff-47b4632984c8"
-                      },
-                      {
-                          "id":  "9ee3e105-ec0a-4aaf-87b4-fc98cef492fa",
-                          "nombre":  "Ranchero",
-                          "descripcion":  "",
-                          "imagen":  "",
-                          "opciones":  [
-                                           {
-                                               "precio_original":  13000,
-                                               "nombre":  "Única",
-                                               "precio":  13000
-                                           }
-                                       ],
-                          "categoria_id":  "9ee3e058-fa4a-4de6-a0ff-47b4632984c8"
-                      }
-                  ]
+  "comercio": {
+    "facebook": "https://www.facebook.com/profile.php?id=61576224881126&sk=about&locale=es_LA",
+    "nombre": "Dalalex",
+    "instagram": "https://www.instagram.com/dalalex_3",
+    "direccion": "Cl. 12 #15-50, Valledupar, Cesar, Colombia",
+    "servicio_domicilio": {
+      "costo": 5000,
+      "disponible": true
+    },
+    "horarios": [
+      {
+        "cierre": "Medianoche",
+        "dia": "Domingo",
+        "apertura": "7:00 AM"
+      },
+      {
+        "cierre": "10:00 PM",
+        "dia": "Lunes",
+        "apertura": "7:00 AM"
+      },
+      {
+        "cierre": "10:00 PM",
+        "dia": "Martes",
+        "apertura": "7:00 AM"
+      },
+      {
+        "cierre": "10:00 PM",
+        "dia": "Miércoles",
+        "apertura": "7:00 AM"
+      },
+      {
+        "cierre": "10:00 PM",
+        "dia": "Jueves",
+        "apertura": "7:00 AM"
+      },
+      {
+        "cierre": "11:00 PM",
+        "dia": "Viernes",
+        "apertura": "7:00 AM"
+      },
+      {
+        "cierre": "11:00 PM",
+        "dia": "Sábado",
+        "apertura": "7:00 AM"
+      }
+    ],
+    "horario": "10:00 - 22:00",
+    "telefono": "573044097549",
+    "estado": "Abierto",
+    "logo": ""
+  },
+  "categorias": [
+    {
+      "icono": "🍦",
+      "nombre": "Helados",
+      "id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "icono": "🥗",
+      "nombre": "Ensaladas",
+      "id": "9edbdf5f-8d95-46b6-8877-7ef0b244c9d9"
+    },
+    {
+      "icono": "🥤",
+      "nombre": "Malteadas",
+      "id": "9e745a36-89ff-4d9a-8dd9-ae8ed107f4e6"
+    },
+    {
+      "icono": "🥪",
+      "nombre": "Sandwich",
+      "id": "9e730b34-4547-4086-a602-bd1fcae43956"
+    },
+    {
+      "icono": "☕",
+      "nombre": "Bebidas calientes",
+      "id": "9e7300e2-411e-44b9-9853-1acbb8b64e22"
+    },
+    {
+      "icono": "🧊",
+      "nombre": "Bebidas frías",
+      "id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "icono": "🥛",
+      "nombre": "Jugos combinados",
+      "id": "9e745c3d-5b80-4516-a8f8-30646acf410d"
+    },
+    {
+      "icono": "🥟",
+      "nombre": "Fritos y horneados",
+      "id": "9e7300e2-8824-459d-8546-56462c3592e8"
+    },
+    {
+      "icono": "🎉",
+      "nombre": "Yupi :)",
+      "id": "9eaf819e-e098-44de-916b-6469bf88c0ca"
+    },
+    {
+      "icono": "🍺",
+      "nombre": "Cervezas y trago",
+      "id": "9ec50d35-9085-4a43-a7fa-74081681c16c"
+    }
+  ],
+  "productos": [
+    {
+      "id": "9ea51660-218d-44ae-97d5-b4dd7ed7f978",
+      "nombre": "Cono",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/dae0fb7d-a2d0-4aa2-9d7a-975975993fdd.jpg",
+      "opciones": [
+        {
+          "precio_original": 3500,
+          "nombre": "1 bola",
+          "precio": 3500
+        },
+        {
+          "precio_original": 6000,
+          "nombre": "2 bolas",
+          "precio": 6000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9ea547ee-4e64-47e0-a1ea-dba9e03f05bd",
+      "nombre": "Canasta",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/071ebf98-7231-40f1-bef4-7b80b0f7600c.png",
+      "opciones": [
+        {
+          "precio_original": 5000,
+          "nombre": "1 bola",
+          "precio": 5000
+        },
+        {
+          "precio_original": 8000,
+          "nombre": "2 bolas",
+          "precio": 8000
+        },
+        {
+          "precio_original": 12000,
+          "nombre": "3 bolas",
+          "precio": 12000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9eaf1df5-088c-4cb9-b838-a949b27fbb84",
+      "nombre": "Maxi Cono",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/be08faa3-5b5a-46b7-874c-70b2ddee732b.jpeg",
+      "opciones": [
+        {
+          "precio_original": 8000,
+          "nombre": "2 Bolas",
+          "precio": 8000
+        },
+        {
+          "precio_original": 12000,
+          "nombre": "3 Bolas",
+          "precio": 12000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9edbdb63-85cd-417f-989b-9d9b109875f7",
+      "nombre": "Banana split",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/bd6ce3a5-2057-4dbc-bb4e-26a1c32669bf.jpeg",
+      "opciones": [
+        {
+          "precio_original": 15000,
+          "nombre": "Única",
+          "precio": 15000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9edbdb65-0a91-4743-97ee-69b0da179f1d",
+      "nombre": "Osito",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/2bb389ac-6e3d-471a-b0d2-5446c3e575eb.jpeg",
+      "opciones": [
+        {
+          "precio_original": 7000,
+          "nombre": "Única",
+          "precio": 7000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9edbdb65-d88c-43ad-ac89-3e78b4e66f25",
+      "nombre": "Pulpito",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/4b848e68-26a3-4dde-9015-394ac66180b5.jpeg",
+      "opciones": [
+        {
+          "precio_original": 7000,
+          "nombre": "Única",
+          "precio": 7000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9edbdb66-80e9-44c0-a598-aa3acc0c4aad",
+      "nombre": "Vaquita",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/8b983fdf-2336-4f31-9941-8fd3dc325c96.jpeg",
+      "opciones": [
+        {
+          "precio_original": 7000,
+          "nombre": "Única",
+          "precio": 7000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9edbdb67-8086-4d0b-82c3-38f8321ee243",
+      "nombre": "Waffles con fresas y chocolate",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/1dbb9853-3448-4294-8d7e-208cd80cf3e7.jpeg",
+      "opciones": [
+        {
+          "precio_original": 14000,
+          "nombre": "Única",
+          "precio": 14000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9edbdb68-40d3-4fb5-a437-5b46aabdbf54",
+      "nombre": "Waffles frutal con helado",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/74e09579-e5d5-41df-880e-5867e9db4a54.jpeg",
+      "opciones": [
+        {
+          "precio_original": 14000,
+          "nombre": "Única",
+          "precio": 14000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9edbdb64-33ec-4d65-856a-a3f722915c2c",
+      "nombre": "Copa brownie con helado",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/cd90a5cf-2172-4106-a36c-6d7e6a533591.jpeg",
+      "opciones": [
+        {
+          "precio_original": 12000,
+          "nombre": "Única",
+          "precio": 12000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9edbdb68-f33c-4aea-b69b-1dc8bdf1f355",
+      "nombre": "Copa Quipito",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/8579f658-c1f0-4809-962b-b58e948edab4.jpeg",
+      "opciones": [
+        {
+          "precio_original": 13000,
+          "nombre": "Única",
+          "precio": 13000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9edbdb69-c82f-4f15-85d1-a74ebf823b30",
+      "nombre": "Copa Millows",
+      "descripcion": "",
+      "imagen": "",
+      "opciones": [
+        {
+          "precio_original": 13000,
+          "nombre": "Única",
+          "precio": 13000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9edbdb6a-942f-4d62-a378-a2ad49c12175",
+      "nombre": "Copa galleta con helado",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/82907ef0-6467-4fd3-95de-7954a3464ab9.jpeg",
+      "opciones": [
+        {
+          "precio_original": 13000,
+          "nombre": "Única",
+          "precio": 13000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9edbdb6b-626e-4185-a401-e54d6cdb1a7f",
+      "nombre": "Copa queso con arequipe",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/daa391d2-9ffe-4305-bc05-d42a3bb8e219.jpeg",
+      "opciones": [
+        {
+          "precio_original": 13000,
+          "nombre": "Única",
+          "precio": 13000
+        }
+      ],
+      "categoria_id": "9ea5165f-c6a8-4ac2-977b-9d3b1e31fb09"
+    },
+    {
+      "id": "9edbdf5f-e4bb-4857-ad3c-059741ce837e",
+      "nombre": "Personal",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/7fae146f-d978-4b67-92e3-23fc9287055e.jpeg",
+      "opciones": [
+        {
+          "precio_original": 16000,
+          "nombre": "Única",
+          "precio": 16000
+        }
+      ],
+      "categoria_id": "9edbdf5f-8d95-46b6-8877-7ef0b244c9d9"
+    },
+    {
+      "id": "9edbdf75-ff83-466b-b834-e0a9c0fd453a",
+      "nombre": "Familiar",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/2ba3c86b-b11a-42f5-b13a-e593c9a86c8c.jpeg",
+      "opciones": [
+        {
+          "precio_original": 22000,
+          "nombre": "Única",
+          "precio": 22000
+        }
+      ],
+      "categoria_id": "9edbdf5f-8d95-46b6-8877-7ef0b244c9d9"
+    },
+    {
+      "id": "9edbdfb5-9217-4158-8c95-2b399dd26fe7",
+      "nombre": "Copa salpicón con helado",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/2431e3f8-6b5b-44fb-8d3f-1d183ffb0dab.jpeg",
+      "opciones": [
+        {
+          "precio_original": 12000,
+          "nombre": "Única",
+          "precio": 12000
+        }
+      ],
+      "categoria_id": "9edbdf5f-8d95-46b6-8877-7ef0b244c9d9"
+    },
+    {
+      "id": "9edbdfef-d015-4ee7-ba2c-4af6ce655c27",
+      "nombre": "Fresas con crema",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/9f61c4d0-d508-4a2f-9c66-b1460749dfd7.jpeg",
+      "opciones": [
+        {
+          "precio_original": 12000,
+          "nombre": "Con helado",
+          "precio": 12000
+        },
+        {
+          "precio_original": 10000,
+          "nombre": "Sin helado",
+          "precio": 10000
+        }
+      ],
+      "categoria_id": "9edbdf5f-8d95-46b6-8877-7ef0b244c9d9"
+    },
+    {
+      "id": "9e745a57-bcf9-47cb-bcd2-bfda7ece283c",
+      "nombre": "Sencilla",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/ad5c9a96-a410-42b0-a962-a3ec7e257fd4.jpeg",
+      "opciones": [
+        {
+          "precio_original": 12000,
+          "nombre": "Única",
+          "precio": 12000
+        }
+      ],
+      "categoria_id": "9e745a36-89ff-4d9a-8dd9-ae8ed107f4e6"
+    },
+    {
+      "id": "9edbde70-69a5-410f-b728-bfc4f0880aa1",
+      "nombre": "Especial Quipito",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/2af1d1a3-0c56-4e79-9648-1a3a365e7458.jpeg",
+      "opciones": [
+        {
+          "precio_original": 16000,
+          "nombre": "Única",
+          "precio": 16000
+        }
+      ],
+      "categoria_id": "9e745a36-89ff-4d9a-8dd9-ae8ed107f4e6"
+    },
+    {
+      "id": "9edbdeeb-17ba-4751-9514-00fc177fc469",
+      "nombre": "Especial chocolate",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/55ad712b-1dae-4c08-b492-d86bd4e062d9.jpeg",
+      "opciones": [
+        {
+          "precio_original": 16000,
+          "nombre": "Única",
+          "precio": 16000
+        }
+      ],
+      "categoria_id": "9e745a36-89ff-4d9a-8dd9-ae8ed107f4e6"
+    },
+    {
+      "id": "9e730b35-5e8a-4b42-b19f-7014210a4523",
+      "nombre": "Sencillo",
+      "descripcion": "Jamón y quesillo",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/13c3c374-f655-4962-99bc-92953055d04e.jpg",
+      "opciones": [
+        {
+          "precio_original": 4500,
+          "nombre": "Única",
+          "precio": 4500
+        }
+      ],
+      "categoria_id": "9e730b34-4547-4086-a602-bd1fcae43956"
+    },
+    {
+      "id": "9e730c11-c5b0-4760-b5ab-c77f22eba514",
+      "nombre": "Sandwich de pollo",
+      "descripcion": "Pan jumbo, jamón, pollo, quesillo y verduras",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/81f9dbc0-876e-473c-933b-86e2d17ce016.JPG",
+      "opciones": [
+        {
+          "precio_original": 7000,
+          "nombre": "Única",
+          "precio": 7000
+        }
+      ],
+      "categoria_id": "9e730b34-4547-4086-a602-bd1fcae43956"
+    },
+    {
+      "id": "9e730c13-0dc9-4242-8428-acd53c9d2e64",
+      "nombre": "Sandwich Cubano",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/566474ea-6325-4afe-9ad2-4add61a7c260.jpg",
+      "opciones": [
+        {
+          "precio_original": 9000,
+          "nombre": "Única",
+          "precio": 9000
+        }
+      ],
+      "categoria_id": "9e730b34-4547-4086-a602-bd1fcae43956"
+    },
+    {
+      "id": "9e7300e2-5188-416d-b018-7319da56e282",
+      "nombre": "Café",
+      "descripcion": "cafe negro",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/9eea266c-5a00-42be-b96a-a6367b02e8bd.jpg",
+      "opciones": [
+        {
+          "precio_original": 1000,
+          "nombre": "Pequeño",
+          "precio": 1000
+        },
+        {
+          "precio_original": 2000,
+          "nombre": "Juan Valdez",
+          "precio": 2000
+        },
+        {
+          "precio_original": 3000,
+          "nombre": "Café expreso",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9e7300e2-411e-44b9-9853-1acbb8b64e22"
+    },
+    {
+      "id": "9e7300e2-7b01-4b03-bb48-ad6d2722ab0b",
+      "nombre": "Café con leche",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/5737a150-2380-4443-8e8f-d9dfa0cb1f76.jpg",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Única",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9e7300e2-411e-44b9-9853-1acbb8b64e22"
+    },
+    {
+      "id": "9e7302b3-beaf-477d-bd27-fc58432b9f70",
+      "nombre": "Aromática",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/0940effd-a0b3-4d6d-829a-bf21a225855d.png",
+      "opciones": [
+        {
+          "precio_original": 2000,
+          "nombre": "Única",
+          "precio": 2000
+        }
+      ],
+      "categoria_id": "9e7300e2-411e-44b9-9853-1acbb8b64e22"
+    },
+    {
+      "id": "9e73039c-50f2-40b3-9997-87a3472fe463",
+      "nombre": "Milo caliente",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/7b0bc12b-927c-4e80-9dda-8ccf19c2549b.jpg",
+      "opciones": [
+        {
+          "precio_original": 3500,
+          "nombre": "Única",
+          "precio": 3500
+        }
+      ],
+      "categoria_id": "9e7300e2-411e-44b9-9853-1acbb8b64e22"
+    },
+    {
+      "id": "9e730e14-26c5-4e90-b20d-c21ed29f18d1",
+      "nombre": "Capuchino",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/c804d55c-1072-4b38-a549-a2a781067959.jpg",
+      "opciones": [
+        {
+          "precio_original": 5000,
+          "nombre": "Única",
+          "precio": 5000
+        }
+      ],
+      "categoria_id": "9e7300e2-411e-44b9-9853-1acbb8b64e22"
+    },
+    {
+      "id": "9e7300e2-ac5e-46f2-99c1-71c36337e4ba",
+      "nombre": "Agua",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/aa031329-b0db-4b28-a487-c90a10215a70.jpg",
+      "opciones": [
+        {
+          "precio_original": 1000,
+          "nombre": "Pequeña",
+          "precio": 1000
+        },
+        {
+          "precio_original": 1000,
+          "nombre": "Pequeña con gas",
+          "precio": 1000
+        },
+        {
+          "precio_original": 2000,
+          "nombre": "Mediana",
+          "precio": 2000
+        },
+        {
+          "precio_original": 1700,
+          "nombre": "Saborizada manzana",
+          "precio": 1700
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9e7300e2-b656-41bb-a206-3aaf9243b47a",
+      "nombre": "Coca-Cola",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/d7ae2f02-8ca4-442e-a298-698d016388fb.jpg",
+      "opciones": [
+        {
+          "precio_original": 4000,
+          "nombre": "Personal 400 ml",
+          "precio": 4000
+        },
+        {
+          "precio_original": 4000,
+          "nombre": "Litro",
+          "precio": 4000
+        },
+        {
+          "precio_original": 6000,
+          "nombre": "1.5 L",
+          "precio": 6000
+        },
+        {
+          "precio_original": 12000,
+          "nombre": "3 L",
+          "precio": 12000
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9e90e283-6d30-461a-81ef-9f9647470028",
+      "nombre": "Soda",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/01e06e57-9c70-4136-9bc3-0b5f125ab082.png",
+      "opciones": [
+        {
+          "precio_original": 3500,
+          "nombre": "Única",
+          "precio": 3500
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9e90e257-6cc5-410d-adb9-e03c8ec74991",
+      "nombre": "Pulp",
+      "descripcion": "",
+      "imagen": "",
+      "opciones": [
+        {
+          "precio_original": 2000,
+          "nombre": "Única",
+          "precio": 2000
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9e730583-573f-4e16-b4f4-c2170f121459",
+      "nombre": "Jugos naturales en agua",
+      "descripcion": ".",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/7a9ed4a0-d683-448a-a6aa-f7c650af61c5.jpg",
+      "opciones": [
+        {
+          "precio_original": 5000,
+          "nombre": "Fresa",
+          "precio": 5000
+        },
+        {
+          "precio_original": 5000,
+          "nombre": "Tomate de árbol",
+          "precio": 5000
+        },
+        {
+          "precio_original": 5000,
+          "nombre": "Guanabana",
+          "precio": 5000
+        },
+        {
+          "precio_original": 5000,
+          "nombre": "Guayaba",
+          "precio": 5000
+        },
+        {
+          "precio_original": 5000,
+          "nombre": "Maracuyá",
+          "precio": 5000
+        },
+        {
+          "precio_original": 5000,
+          "nombre": "Mandarina",
+          "precio": 5000
+        },
+        {
+          "precio_original": 5000,
+          "nombre": "Melón",
+          "precio": 5000
+        },
+        {
+          "precio_original": 5000,
+          "nombre": "Mora",
+          "precio": 5000
+        },
+        {
+          "precio_original": 5000,
+          "nombre": "Naranja",
+          "precio": 5000
+        },
+        {
+          "precio_original": 5000,
+          "nombre": "Lulo",
+          "precio": 5000
+        },
+        {
+          "precio_original": 5000,
+          "nombre": "Piña",
+          "precio": 5000
+        },
+        {
+          "precio_original": 5000,
+          "nombre": "Otra fruta",
+          "precio": 5000
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9e730585-aa50-45b3-a01a-7bdcd9f7d275",
+      "nombre": "Jugos en leche",
+      "descripcion": ".",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/86a23501-8e9e-464c-8818-d56e3f85dd09.jpg",
+      "opciones": [
+        {
+          "precio_original": 6000,
+          "nombre": "Banano",
+          "precio": 6000
+        },
+        {
+          "precio_original": 7000,
+          "nombre": "Cerelac",
+          "precio": 7000
+        },
+        {
+          "precio_original": 6000,
+          "nombre": "Guanábana",
+          "precio": 6000
+        },
+        {
+          "precio_original": 6000,
+          "nombre": "Fresa",
+          "precio": 6000
+        },
+        {
+          "precio_original": 6000,
+          "nombre": "Maracuya",
+          "precio": 6000
+        },
+        {
+          "precio_original": 6500,
+          "nombre": "Milo",
+          "precio": 6500
+        },
+        {
+          "precio_original": 6000,
+          "nombre": "Mora",
+          "precio": 6000
+        },
+        {
+          "precio_original": 6000,
+          "nombre": "Níspero",
+          "precio": 6000
+        },
+        {
+          "precio_original": 6000,
+          "nombre": "Lulo",
+          "precio": 6000
+        },
+        {
+          "precio_original": 6000,
+          "nombre": "Zapote",
+          "precio": 6000
+        },
+        {
+          "precio_original": 6000,
+          "nombre": "Otra fruta",
+          "precio": 6000
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9e91914b-bb21-40d0-9fc7-4fcc8bc38ba9",
+      "nombre": "Postobón",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/017e90b3-09ad-4880-af43-9cb063c01fd4.jpg",
+      "opciones": [
+        {
+          "precio_original": 1500,
+          "nombre": "250 ml",
+          "precio": 1500
+        },
+        {
+          "precio_original": 3500,
+          "nombre": "Litro",
+          "precio": 3500
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9e91922f-3d9e-47c1-b6a9-9e4672cc6b86",
+      "nombre": "Pony",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/675f424a-8bb2-4899-8b40-bd1ebb9b4144.png",
+      "opciones": [
+        {
+          "nombre": "Pony Mini",
+          "precio": 2000,
+          "precio_original": 2000
+        },
+        {
+          "nombre": "Pony Normal",
+          "precio": 3000,
+          "precio_original": 3000
+        },
+        {
+          "nombre": "Pony Litro",
+          "precio": 5000,
+          "precio_original": 5000
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9e9193f8-4a06-412e-b3ad-e1443ba4d845",
+      "nombre": "California",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/bda99660-e52a-43e9-809b-441fbee95e98.png",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Única",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9ee30292-d774-4538-8a81-37212668397d",
+      "nombre": "Jugo hit",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/978e2147-09d0-4190-a596-19debcf507b5.png",
+      "opciones": [
+        {
+          "precio_original": 2000,
+          "nombre": "Única",
+          "precio": 2000
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9e91958d-d546-4904-a25b-84f607f3f294",
+      "nombre": "Speed max",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/47aa8f2a-c5eb-48b6-8885-8c226dc16267.jpg",
+      "opciones": [
+        {
+          "precio_original": 2200,
+          "nombre": "Única",
+          "precio": 2200
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9e919697-b4fb-4dab-95f2-b09f63a9e9f9",
+      "nombre": "Cola y pola",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/df544faa-95a3-4a83-a27c-2d1cd2ddc5a5.jpg",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Única",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9e9d633a-3168-498f-9d87-b16e81466343",
+      "nombre": "Gatorade",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/0147eed0-7c3a-4932-98f3-1e077eba5d8c.png",
+      "opciones": [
+        {
+          "precio_original": 4000,
+          "nombre": "Única",
+          "precio": 4000
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9ec50eb5-589f-4752-aa50-72418a2a3dbc",
+      "nombre": "Electrolic",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/e7b9dd36-9591-42b4-900e-81c1bbc25e1b.jpg",
+      "opciones": [
+        {
+          "precio_original": 11000,
+          "nombre": "Única",
+          "precio": 11000
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9ed4047b-9f05-4db8-8e85-c3b6158104f6",
+      "nombre": "Ginger",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/e9e54e7e-f89b-4f3d-b160-8f1edf5c47ca.png",
+      "opciones": [
+        {
+          "precio_original": 3500,
+          "nombre": "Única",
+          "precio": 3500
+        }
+      ],
+      "categoria_id": "9e7300e2-aa52-4daf-96c6-ad44f0c8e2de"
+    },
+    {
+      "id": "9e745c3d-ad08-480c-b0cb-236763581870",
+      "nombre": "Fresa, naranja",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/48f327c7-1af2-403a-a121-b0720f26c19f.jpg",
+      "opciones": [
+        {
+          "precio_original": 6000,
+          "nombre": "Única",
+          "precio": 6000
+        }
+      ],
+      "categoria_id": "9e745c3d-5b80-4516-a8f8-30646acf410d"
+    },
+    {
+      "id": "9e745cd7-d470-4d3e-91d7-28fe3489e25f",
+      "nombre": "Milo, banano",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/af6b63d6-f81b-4d1d-ba4a-3b108a4ee0fc.jpg",
+      "opciones": [
+        {
+          "precio_original": 7000,
+          "nombre": "Única",
+          "precio": 7000
+        }
+      ],
+      "categoria_id": "9e745c3d-5b80-4516-a8f8-30646acf410d"
+    },
+    {
+      "id": "9e745e48-7863-4fb2-bdd7-eb0d47252d11",
+      "nombre": "Lulo, maracuyá",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/fd2e7f3a-3f89-4071-9e79-d94f4405beb7.png",
+      "opciones": [
+        {
+          "precio_original": 5000,
+          "nombre": "En agua",
+          "precio": 5000
+        },
+        {
+          "precio_original": 6000,
+          "nombre": "En leche",
+          "precio": 6000
+        }
+      ],
+      "categoria_id": "9e745c3d-5b80-4516-a8f8-30646acf410d"
+    },
+    {
+      "id": "9e745d04-0855-4800-a44e-b014bd49ec91",
+      "nombre": "Frutos rojos",
+      "descripcion": "Fresa, mora, cereza.",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/53c4534d-ef91-4282-b715-efa9677c83b7.jpg",
+      "opciones": [
+        {
+          "precio_original": 6000,
+          "nombre": "Única",
+          "precio": 6000
+        }
+      ],
+      "categoria_id": "9e745c3d-5b80-4516-a8f8-30646acf410d"
+    },
+    {
+      "id": "9e745d46-034b-48fc-b934-16a542b06a77",
+      "nombre": "Frutos Amarillos",
+      "descripcion": "Piña, maracuyá y naranja",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/4565bcbf-ca0a-4f30-b367-e6f5aef49a4d.jpg",
+      "opciones": [
+        {
+          "precio_original": 6000,
+          "nombre": "Única",
+          "precio": 6000
+        }
+      ],
+      "categoria_id": "9e745c3d-5b80-4516-a8f8-30646acf410d"
+    },
+    {
+      "id": "9ee18242-30b7-4a1e-ad71-fef068681d58",
+      "nombre": "Lulo, fresa",
+      "descripcion": "agua",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/a68e08b2-47a0-4496-b53f-224ef5ec57ed.jpg",
+      "opciones": [
+        {
+          "precio_original": 5000,
+          "nombre": "Única",
+          "precio": 5000
+        }
+      ],
+      "categoria_id": "9e745c3d-5b80-4516-a8f8-30646acf410d"
+    },
+    {
+      "id": "9ee1a48a-29f6-4288-81e9-5a95b0881866",
+      "nombre": "Maracuya, mango",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/75200fe2-6a37-4696-8d7c-2390a1f31870.jpg",
+      "opciones": [
+        {
+          "precio_original": 5000,
+          "nombre": "Única",
+          "precio": 5000
+        }
+      ],
+      "categoria_id": "9e745c3d-5b80-4516-a8f8-30646acf410d"
+    },
+    {
+      "id": "9e7300e2-9282-401d-a947-5cb3f8fedaa9",
+      "nombre": "Pastelitos",
+      "descripcion": "Pollo Hawaiana",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/be47e244-60c4-463a-a70e-56f5f93fe9e6.jpg",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Única",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9e7300e2-8824-459d-8546-56462c3592e8"
+    },
+    {
+      "id": "9e730a7a-1e7a-47b9-a420-8933ef9f5277",
+      "nombre": "Deditos",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/cc551078-4ece-4e4e-a55f-d44e9cb6cba7.jpg",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Única",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9e7300e2-8824-459d-8546-56462c3592e8"
+    },
+    {
+      "id": "9e730a7b-b136-4a60-a84d-6460cfdc9b83",
+      "nombre": "Empanadas",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/47cf75c4-9e4d-48ad-9ee7-cd9a58a87219.jpg",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Única",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9e7300e2-8824-459d-8546-56462c3592e8"
+    },
+    {
+      "id": "9e730e72-a955-479c-b39a-d17a797840e2",
+      "nombre": "Pan de bono",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/c3e54278-fb98-4eec-9c4d-9e8879813fd8.jpg",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Única",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9e7300e2-8824-459d-8546-56462c3592e8"
+    },
+    {
+      "id": "9e730e88-04f5-403a-a5f9-eb7fa81ab6b3",
+      "nombre": "Arepa",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/6a5a7fe8-0b04-40e9-8955-294bbb79268e.jpg",
+      "opciones": [
+        {
+          "precio_original": 4000,
+          "nombre": "De queso",
+          "precio": 4000
+        },
+        {
+          "precio_original": 6000,
+          "nombre": "Rellena de pollo",
+          "precio": 6000
+        },
+        {
+          "precio_original": 6000,
+          "nombre": "Rellena de carne",
+          "precio": 6000
+        }
+      ],
+      "categoria_id": "9e7300e2-8824-459d-8546-56462c3592e8"
+    },
+    {
+      "id": "9e730ec6-de38-4b9c-b9d9-b4b6223cc43b",
+      "nombre": "Buñuelo",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/80bc6c5c-c836-4ea6-a04e-08063ecd0747.jpg",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Única",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9e7300e2-8824-459d-8546-56462c3592e8"
+    },
+    {
+      "id": "9e730f7e-524b-4d58-8d45-7e14f1330c8b",
+      "nombre": "Chorizo con bollo",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/1f7c7b4b-fefa-425a-bc84-8b7abe4d561c.jpg",
+      "opciones": [
+        {
+          "precio_original": 5000,
+          "nombre": "Única",
+          "precio": 5000
+        }
+      ],
+      "categoria_id": "9e7300e2-8824-459d-8546-56462c3592e8"
+    },
+    {
+      "id": "9e96525f-9103-4a36-9fdf-a5da4d345648",
+      "nombre": "Patacón",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/540f4b10-0807-415f-aee5-8449b3d5099b.jpg",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Única",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9e7300e2-8824-459d-8546-56462c3592e8"
+    },
+    {
+      "id": "9e9ab18a-a044-492f-8aa6-7d81104bc5d6",
+      "nombre": "Pasteles",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/56a99a4d-a4a4-4945-903c-1179a4d77e51.jpg",
+      "opciones": [
+        {
+          "precio_original": 11000,
+          "nombre": "Única",
+          "precio": 11000
+        }
+      ],
+      "categoria_id": "9e7300e2-8824-459d-8546-56462c3592e8"
+    },
+    {
+      "id": "9e9e53ea-0458-4d60-aacd-8bb770ee67f6",
+      "nombre": "Papa",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/dc396f13-5a60-4e49-ae23-d416146dadd4.jpg",
+      "opciones": [
+        {
+          "precio_original": 2500,
+          "nombre": "Única",
+          "precio": 2500
+        }
+      ],
+      "categoria_id": "9e7300e2-8824-459d-8546-56462c3592e8"
+    },
+    {
+      "id": "9eeba045-c51f-42a5-beb0-e3599fada9cf",
+      "nombre": "Copelia",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/d0c661d1-39b2-41f9-ac02-4ab8baf9dd70.jpeg",
+      "opciones": [
+        {
+          "precio_original": 600,
+          "nombre": "Única",
+          "precio": 600
+        }
+      ],
+      "categoria_id": "9eaf819e-e098-44de-916b-6469bf88c0ca"
+    },
+    {
+      "id": "9eaf81c6-fae0-4473-b7ad-427080c6439e",
+      "nombre": "Tozinetas",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/ccbde810-32a2-4bbb-9cb7-1d6d9a2cab6c.jpg",
+      "opciones": [
+        {
+          "precio_original": 2500,
+          "nombre": "Única",
+          "precio": 2500
+        }
+      ],
+      "categoria_id": "9eaf819e-e098-44de-916b-6469bf88c0ca"
+    },
+    {
+      "id": "9eaf81c9-133e-4e09-9ee1-f92d4152502c",
+      "nombre": "Rizadas",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/b58f82fd-4c80-4692-b757-e23f52ca3e74.jpeg",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Mayonesa",
+          "precio": 3000
+        },
+        {
+          "precio_original": 3000,
+          "nombre": "Limón",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9eaf819e-e098-44de-916b-6469bf88c0ca"
+    },
+    {
+      "id": "9eaf819f-2bff-4407-b3d2-e6dd6bbaff42",
+      "nombre": "Golpe",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/f9a06b91-0766-478d-a1f6-478bc5bd43c1.jpeg",
+      "opciones": [
+        {
+          "precio_original": 8000,
+          "nombre": "Mayonesa",
+          "precio": 8000
+        },
+        {
+          "precio_original": 8000,
+          "nombre": "Limón",
+          "precio": 8000
+        },
+        {
+          "precio_original": 8000,
+          "nombre": "Ranchero",
+          "precio": 8000
+        }
+      ],
+      "categoria_id": "9eaf819e-e098-44de-916b-6469bf88c0ca"
+    },
+    {
+      "id": "9eaf81c6-4062-435c-ac09-90eb6d8107f2",
+      "nombre": "Palomitas",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/88e9d012-9fbf-4246-bbb5-e4e7bbcafc70.jpg",
+      "opciones": [
+        {
+          "precio_original": 2000,
+          "nombre": "Única",
+          "precio": 2000
+        }
+      ],
+      "categoria_id": "9eaf819e-e098-44de-916b-6469bf88c0ca"
+    },
+    {
+      "id": "9eaf82e3-3062-4f7a-b504-a0d219fb57a2",
+      "nombre": "Tosti pizza",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/6839d061-1cc5-410b-b86a-5b040a5698d6.jpeg",
+      "opciones": [
+        {
+          "precio_original": 2000,
+          "nombre": "Única",
+          "precio": 2000
+        }
+      ],
+      "categoria_id": "9eaf819e-e098-44de-916b-6469bf88c0ca"
+    },
+    {
+      "id": "9eaf83e9-fedf-4c6f-a011-62a278f9acd4",
+      "nombre": "Tosti empanada",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/97325414-4ac6-43c5-8e34-fbc48a7be737.jpeg",
+      "opciones": [
+        {
+          "precio_original": 2000,
+          "nombre": "Única",
+          "precio": 2000
+        }
+      ],
+      "categoria_id": "9eaf819e-e098-44de-916b-6469bf88c0ca"
+    },
+    {
+      "id": "9eaf82e4-4aff-4ecc-8837-3edde6a02dcf",
+      "nombre": "Cheesee",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/15809fcb-4257-4fd5-91f1-ccf6feadb706.jpg",
+      "opciones": [
+        {
+          "precio_original": 2000,
+          "nombre": "Única",
+          "precio": 2000
+        }
+      ],
+      "categoria_id": "9eaf819e-e098-44de-916b-6469bf88c0ca"
+    },
+    {
+      "id": "9ec50d35-e64d-431d-8cd9-b33a5cfbee49",
+      "nombre": "Coronita",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/e431c4b1-1b64-4f28-bda9-a0c2a95af125.png",
+      "opciones": [
+        {
+          "precio_original": 4000,
+          "nombre": "Única",
+          "precio": 4000
+        }
+      ],
+      "categoria_id": "9ec50d35-9085-4a43-a7fa-74081681c16c"
+    },
+    {
+      "id": "9ed9466f-365b-4f97-9ff2-6b8af39e574a",
+      "nombre": "Costeña",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/95677a7a-29ac-4e10-ba84-4666f38c71e9.png",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Única",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9ec50d35-9085-4a43-a7fa-74081681c16c"
+    },
+    {
+      "id": "9ec50d4a-208d-4ae1-b448-b4e93d9d9728",
+      "nombre": "Aguila",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/77ee6a1b-8926-46ee-a0ea-8bf424179c87.png",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Única",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9ec50d35-9085-4a43-a7fa-74081681c16c"
+    },
+    {
+      "id": "9ed94671-31f6-49c2-8813-095265c70cf4",
+      "nombre": "Club Colombia",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/0e8d6cd7-2726-4b41-b1f0-5e99f665ba81.png",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Única",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9ec50d35-9085-4a43-a7fa-74081681c16c"
+    },
+    {
+      "id": "9ec50db7-8bb8-4b2b-bf20-9c9fdcb56cf8",
+      "nombre": "Miller",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/9e873c69-3ddf-45d1-bd21-d8b63779bf13.jpeg",
+      "opciones": [
+        {
+          "precio_original": 3000,
+          "nombre": "Única",
+          "precio": 3000
+        }
+      ],
+      "categoria_id": "9ec50d35-9085-4a43-a7fa-74081681c16c"
+    },
+    {
+      "id": "9ec50d4b-b112-45c2-9dec-8b24159e51c4",
+      "nombre": "Aguardiente L",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/fa7ab880-0e29-4267-936a-9a39710a0096.jpg",
+      "opciones": [
+        {
+          "precio_original": 70000,
+          "nombre": "Única",
+          "precio": 70000
+        }
+      ],
+      "categoria_id": "9ec50d35-9085-4a43-a7fa-74081681c16c"
+    },
+    {
+      "id": "9ec50db8-f682-4276-92a6-de551a60f58d",
+      "nombre": "Likes",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/ecf61c1a-0d0d-45d0-ad4a-015565e698d2.jpeg",
+      "opciones": [
+        {
+          "precio_original": 5000,
+          "nombre": "Única",
+          "precio": 5000
+        }
+      ],
+      "categoria_id": "9ec50d35-9085-4a43-a7fa-74081681c16c"
+    },
+    {
+      "id": "9ec5a3f2-9e48-44e1-9507-46263fd53f64",
+      "nombre": "Michelada",
+      "descripcion": "",
+      "imagen": "https://assets.olaclick.app/companies/products/images/800/25d813c6-ef02-4f0d-b52b-7ae31fa2a3ae.jpeg",
+      "opciones": [
+        {
+          "precio_original": 7000,
+          "nombre": "Sencilla ginger/soda",
+          "precio": 7000
+        },
+        {
+          "precio_original": 10000,
+          "nombre": "Sencilla cerveza",
+          "precio": 10000
+        },
+        {
+          "precio_original": 12000,
+          "nombre": "Frutos ginger/soda",
+          "precio": 12000
+        },
+        {
+          "precio_original": 15000,
+          "nombre": "Frutos cerveza",
+          "precio": 15000
+        }
+      ],
+      "categoria_id": "9ec50d35-9085-4a43-a7fa-74081681c16c"
+    }
+  ]
 }
