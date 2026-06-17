@@ -1,0 +1,88 @@
+{
+  "comercio": {
+    "nombre": "Dalalex",
+    "logo": "",
+    "estado": "Abierto",
+    "horario": "10:00 - 22:00",
+    "telefono": "+573001234567",
+    "direccion": "Cl. 12 #15-50, Valledupar, Cesar, Colombia",
+    "instagram": "https://www.instagram.com/dalalex_3",
+    "facebook": "https://www.facebook.com/profile.php?id=61576224881126&sk=about&locale=es_LA",
+    "horarios": [
+      { "dia": "Domingo", "apertura": "7:00 AM", "cierre": "Medianoche" },
+      { "dia": "Lunes", "apertura": "7:00 AM", "cierre": "10:00 PM" },
+      { "dia": "Martes", "apertura": "7:00 AM", "cierre": "10:00 PM" },
+      { "dia": "Miércoles", "apertura": "7:00 AM", "cierre": "10:00 PM" },
+      { "dia": "Jueves", "apertura": "7:00 AM", "cierre": "10:00 PM" },
+      { "dia": "Viernes", "apertura": "7:00 AM", "cierre": "11:00 PM" },
+      { "dia": "Sábado", "apertura": "7:00 AM", "cierre": "11:00 PM" }
+    ],
+    "servicio_domicilio": { "disponible": true, "costo": 5000 }
+  },
+  "categorias": [
+    { "id": 1, "nombre": "Fritos", "icono": "🥟" },
+    { "id": 2, "nombre": "Horneados", "icono": "🥐" },
+    { "id": 3, "nombre": "Helados", "icono": "🍦" },
+    { "id": 4, "nombre": "Malteadas", "icono": "🥤" },
+    { "id": 5, "nombre": "Sandwiches", "icono": "🥪" },
+    { "id": 6, "nombre": "Ensaladas", "icono": "🥗" },
+    { "id": 7, "nombre": "Jugos en Leche", "icono": "🥛" },
+    { "id": 8, "nombre": "Bebidas Frias", "icono": "🧊" },
+    { "id": 9, "nombre": "Bebidas Calientes", "icono": "☕" },
+    { "id": 10, "nombre": "Cervezas y Tragos", "icono": "🍺" }
+  ],
+  "productos": [
+    { "id": 1, "nombre": "Empanadas", "descripcion": "Empanadas fritas de carne y papa", "precio": 3000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Empanadas", "categoria_id": 1, "destacado": true },
+    { "id": 2, "nombre": "Patacones", "descripcion": "Patacones crujientes con hogao", "precio": 3000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Patacones", "categoria_id": 1, "destacado": false },
+    { "id": 3, "nombre": "Papas francesas", "descripcion": "Papas fritas crocantes", "precio": 4000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Papas+francesas", "categoria_id": 1, "destacado": false },
+    { "id": 4, "nombre": "Tequeños", "descripcion": "Palitos de queso fritos", "precio": 5000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Tequenos", "categoria_id": 1, "destacado": false },
+    { "id": 5, "nombre": "Dedos de queso", "descripcion": "Dedos de mozzarella empanizados", "precio": 4500, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Dedos+de+queso", "categoria_id": 1, "destacado": false },
+
+    { "id": 6, "nombre": "Empanadas", "descripcion": "Empanadas horneadas de pollo", "precio": 3000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Empanadas", "categoria_id": 2, "destacado": true },
+    { "id": 7, "nombre": "Pastel de pollo", "descripcion": "Pastel de pollo horneado", "precio": 3500, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Pastel+de+pollo", "categoria_id": 2, "destacado": false },
+    { "id": 8, "nombre": "Croissants", "descripcion": "Croissants de mantequilla", "precio": 2500, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Croissants", "categoria_id": 2, "destacado": false },
+    { "id": 9, "nombre": "Pan de bono", "descripcion": "Pan de bono caliente", "precio": 2000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Pan+de+bono", "categoria_id": 2, "destacado": false },
+    { "id": 10, "nombre": "Arepas", "descripcion": "Arepas de maiz con queso", "precio": 3000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Arepas", "categoria_id": 2, "destacado": false },
+
+    { "id": 11, "nombre": "Cono", "descripcion": "Helado en cono crujiente", "precio": 3500, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Cono", "categoria_id": 3, "destacado": false },
+    { "id": 12, "nombre": "Canasta", "descripcion": "Helado en canasta", "precio": 5000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Canasta", "categoria_id": 3, "destacado": false },
+    { "id": 13, "nombre": "Helado de vaso", "descripcion": "Helado cremoso en vaso", "precio": 3000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Helado+de+vaso", "categoria_id": 3, "destacado": false },
+    { "id": 14, "nombre": "Chocorramo con helado", "descripcion": "Chocorramo acompanado de helado", "precio": 6000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Chocorramo+helado", "categoria_id": 3, "destacado": false },
+
+    { "id": 15, "nombre": "Malteada de vainilla", "descripcion": "Malteada cremosa de vainilla", "precio": 6000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Malteada+vainilla", "categoria_id": 4, "destacado": false },
+    { "id": 16, "nombre": "Malteada de chocolate", "descripcion": "Malteada cremosa de chocolate", "precio": 6000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Malteada+chocolate", "categoria_id": 4, "destacado": false },
+    { "id": 17, "nombre": "Malteada de oreo", "descripcion": "Malteada con galleta oreo", "precio": 8000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Malteada+oreo", "categoria_id": 4, "destacado": false },
+
+    { "id": 18, "nombre": "Sandwich mixto", "descripcion": "Jamon y queso en pan tostado", "precio": 5000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Sandwich+mixto", "categoria_id": 5, "destacado": false },
+    { "id": 19, "nombre": "Sandwich de pollo", "descripcion": "Pechuga de pollo con vegetales", "precio": 7000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Sandwich+pollo", "categoria_id": 5, "destacado": false },
+    { "id": 20, "nombre": "Sandwich especial", "descripcion": "Carne, queso y vegetales", "precio": 8000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Sandwich+especial", "categoria_id": 5, "destacado": false },
+    { "id": 21, "nombre": "Perro caliente", "descripcion": "Perro caliente con todo", "precio": 6000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Perro+caliente", "categoria_id": 5, "destacado": false },
+
+    { "id": 22, "nombre": "Ensalada clasica", "descripcion": "Lechuga, tomate y cebolla", "precio": 7000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Ensalada+clasica", "categoria_id": 6, "destacado": false },
+    { "id": 23, "nombre": "Ensalada cesar", "descripcion": "Pollo, lechuga y aderezo cesar", "precio": 10000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Ensalada+cesar", "categoria_id": 6, "destacado": false },
+    { "id": 24, "nombre": "Ensalada de frutas", "descripcion": "Fresas, banano y yogurth", "precio": 12000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Ensalada+frutas", "categoria_id": 6, "destacado": false },
+
+    { "id": 25, "nombre": "Jugos en leche", "descripcion": "Jugo natural preparado en leche", "precio": 3000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Jugos+en+leche", "categoria_id": 7, "destacado": true },
+    { "id": 26, "nombre": "Jugo de fresa", "descripcion": "Jugo de fresa en leche", "precio": 3000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Jugo+fresa", "categoria_id": 7, "destacado": false },
+    { "id": 27, "nombre": "Jugo de mango", "descripcion": "Jugo de mango en leche", "precio": 3000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Jugo+mango", "categoria_id": 7, "destacado": false },
+    { "id": 28, "nombre": "Jugo de guanabana", "descripcion": "Jugo de guanabana en leche", "precio": 3000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Jugo+guanabana", "categoria_id": 7, "destacado": false },
+    { "id": 29, "nombre": "Jugo de lulo", "descripcion": "Jugo de lulo en leche", "precio": 3000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Jugo+lulo", "categoria_id": 7, "destacado": false },
+
+    { "id": 30, "nombre": "Soda", "descripcion": "Soda fria", "precio": 2000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Soda", "categoria_id": 8, "destacado": false },
+    { "id": 31, "nombre": "Gaseosa", "descripcion": "Gaseosa personal", "precio": 2500, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Gaseosa", "categoria_id": 8, "destacado": false },
+    { "id": 32, "nombre": "Te frio", "descripcion": "Te frio con limon", "precio": 3000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Te+frio", "categoria_id": 8, "destacado": false },
+    { "id": 33, "nombre": "Limonada", "descripcion": "Limonada natural", "precio": 3000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Limonada", "categoria_id": 8, "destacado": false },
+    { "id": 34, "nombre": "Agua", "descripcion": "Agua embotellada", "precio": 1500, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Agua", "categoria_id": 8, "destacado": false },
+
+    { "id": 35, "nombre": "Cafe negro", "descripcion": "Cafe negro tradicional", "precio": 1500, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Cafe+negro", "categoria_id": 9, "destacado": false },
+    { "id": 36, "nombre": "Cafe con leche", "descripcion": "Cafe con leche caliente", "precio": 2500, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Cafe+con+leche", "categoria_id": 9, "destacado": false },
+    { "id": 37, "nombre": "Tinto", "descripcion": "Tinto colombiano", "precio": 1500, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Tinto", "categoria_id": 9, "destacado": false },
+    { "id": 38, "nombre": "Chocolate caliente", "descripcion": "Chocolate caliente", "precio": 3500, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Chocolate+caliente", "categoria_id": 9, "destacado": false },
+    { "id": 39, "nombre": "Aromatica", "descripcion": "Aromatica de hierbas", "precio": 2000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Aromatica", "categoria_id": 9, "destacado": false },
+
+    { "id": 40, "nombre": "Cerveza Aguila", "descripcion": "Cerveza Aguila", "precio": 3000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Cerveza+Aguila", "categoria_id": 10, "destacado": false },
+    { "id": 41, "nombre": "Club Colombia", "descripcion": "Cerveza Club Colombia", "precio": 4000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Club+Colombia", "categoria_id": 10, "destacado": false },
+    { "id": 42, "nombre": "Ron con gaseosa", "descripcion": "Ron con gaseosa", "precio": 7000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Ron+gaseosa", "categoria_id": 10, "destacado": false },
+    { "id": 43, "nombre": "Aguardiente", "descripcion": "Aguardiente antioqueno", "precio": 5000, "imagen": "https://placehold.co/400x300/FFFBF0/E53935?text=Aguardiente", "categoria_id": 10, "destacado": false }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "olaclick-clone",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "server": "cd server && node server.js",
+    "frontend": "cd frontend && npm run dev",
+    "dev": "start pwsh -NoExit -Command \"cd server; node server.js\" && start pwsh -NoExit -Command \"cd frontend; npm run dev\""
+  }
+}
