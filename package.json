@@ -5,6 +5,6 @@
   "scripts": {
     "server": "cd server && node server.js",
     "frontend": "cd frontend && npm run dev",
-    "dev": "start pwsh -NoExit -Command \"cd server; node server.js\" && start pwsh -NoExit -Command \"cd frontend; npm run dev\""
+    "dev": "start powershell -NoExit -Command \"cd server; node server.js\" & start powershell -NoExit -Command \"cd frontend; npm run dev\""
   }
 }

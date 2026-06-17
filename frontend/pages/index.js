@@ -62,7 +62,7 @@ export default function Home() {
     observerRef.current = new IntersectionObserver((entries) => {
       const visible = entries.filter(e => e.isIntersecting)
       if (visible.length > 0) {
-        const id = Number(visible[0].target.dataset.categoryId)
+        const id = visible[0].target.dataset.categoryId
         setActiveCategory(id)
       }
     }, {

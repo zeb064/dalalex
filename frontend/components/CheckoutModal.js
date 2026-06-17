@@ -33,7 +33,8 @@ export default function CheckoutModal({ show, onClose, comercio }) {
 
     items.forEach(item => {
       const subtotal = item.precio * item.quantity
-      mensaje += `• ${item.nombre} x${item.quantity} = ${formatPrice(subtotal)}\n`
+      const variant = item.opcionNombre && item.opcionNombre !== 'Única' ? ` (${item.opcionNombre})` : ''
+      mensaje += `• ${item.nombre}${variant} x${item.quantity} = ${formatPrice(subtotal)}\n`
     })
 
     mensaje += `\n─────────────────\n`

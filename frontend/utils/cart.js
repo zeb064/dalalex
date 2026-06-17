@@ -4,15 +4,20 @@ const CartContext = createContext()
 
 const STORAGE_KEY = 'dalalex-cart'
 
+function generateCartKey(productId, optionIndex) {
+  if (optionIndex === undefined || optionIndex === null) return productId
+  return `${productId}-${optionIndex}`
+}
+
 function cartReducer(state, action) {
   switch (action.type) {
     case 'ADD_ITEM': {
-      const existing = state.items.find(item => item.id === action.payload.id)
+      const existing = state.items.find(item => item._cartKey === action.payload._cartKey)
       if (existing) {
         return {
           ...state,
           items: state.items.map(item =>
-            item.id === action.payload.id
+            item._cartKey === action.payload._cartKey
               ? { ...item, quantity: item.quantity + 1 }
               : item
           )
@@ -24,12 +29,12 @@ function cartReducer(state, action) {
       }
     }
     case 'REMOVE_ITEM': {
-      const existing = state.items.find(item => item.id === action.payload)
+      const existing = state.items.find(item => item._cartKey === action.payload)
       if (existing && existing.quantity > 1) {
         return {
           ...state,
           items: state.items.map(item =>
-            item.id === action.payload
+            item._cartKey === action.payload
               ? { ...item, quantity: item.quantity - 1 }
               : item
           )
@@ -37,13 +42,13 @@ function cartReducer(state, action) {
       }
       return {
         ...state,
-        items: state.items.filter(item => item.id !== action.payload)
+        items: state.items.filter(item => item._cartKey !== action.payload)
       }
     }
     case 'REMOVE_ENTIRELY':
       return {
         ...state,
-        items: state.items.filter(item => item.id !== action.payload)
+        items: state.items.filter(item => item._cartKey !== action.payload)
       }
     case 'CLEAR':
       return { ...state, items: [] }
@@ -73,9 +78,20 @@ export function CartProvider({ children }) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state.items))
   }, [state.items])
 
-  const addItem = (product) => dispatch({ type: 'ADD_ITEM', payload: product })
-  const removeItem = (productId) => dispatch({ type: 'REMOVE_ITEM', payload: productId })
-  const removeEntirely = (productId) => dispatch({ type: 'REMOVE_ENTIRELY', payload: productId })
+  const addItem = (product, optionIndex, optionNombre, optionPrecio) => {
+    const _cartKey = product._cartKey || generateCartKey(product.id, optionIndex)
+    const item = {
+      ...product,
+      _cartKey,
+      _optionIndex: optionIndex,
+      precio: optionPrecio || product.precio || product.opciones?.[0]?.precio || 0,
+      opcionNombre: optionNombre || null
+    }
+    dispatch({ type: 'ADD_ITEM', payload: item })
+  }
+
+  const removeItem = (cartKey) => dispatch({ type: 'REMOVE_ITEM', payload: cartKey })
+  const removeEntirely = (cartKey) => dispatch({ type: 'REMOVE_ENTIRELY', payload: cartKey })
   const clearCart = () => dispatch({ type: 'CLEAR' })
 
   const totalItems = state.items.reduce((sum, item) => sum + item.quantity, 0)
