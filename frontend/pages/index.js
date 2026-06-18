@@ -1,6 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
 import Header from '../components/Header'
-import CategoryNav from '../components/CategoryNav'
 import ProductGrid from '../components/ProductGrid'
 import CartFAB from '../components/CartFAB'
 import CheckoutModal from '../components/CheckoutModal'
@@ -50,7 +49,7 @@ export default function Home() {
     setActiveCategory(categoryId)
     const el = document.getElementById(`category-${categoryId}`)
     if (el) {
-      const headerHeight = 130
+      const headerHeight = 120
       const top = el.getBoundingClientRect().top + window.pageYOffset - headerHeight
       window.scrollTo({ top, behavior: 'smooth' })
     }
@@ -66,7 +65,7 @@ export default function Home() {
         setActiveCategory(id)
       }
     }, {
-      rootMargin: '-80px 0px -60% 0px',
+      rootMargin: '-110px 0px -55% 0px',
       threshold: 0
     })
 
@@ -104,15 +103,10 @@ export default function Home() {
         comercio={data?.comercio}
         onWhatsApp={() => {}}
         onInfoClick={() => setShowInfo(true)}
+        categorias={data?.categorias}
+        activeCategory={activeCategory}
+        onSelectCategory={scrollToCategory}
       />
-
-      {!loading && data?.categorias && (
-        <CategoryNav
-          categorias={data.categorias}
-          activeCategory={activeCategory}
-          onSelectCategory={scrollToCategory}
-        />
-      )}
 
       {loading ? (
         <main className="main">
