@@ -17,8 +17,9 @@ export default function Home() {
   const [showInfo, setShowInfo] = useState(false)
   const [toast, setToast] = useState(null)
   const [fabBounce, setFabBounce] = useState(false)
-  const categoryRefs = useRef({})
   const observerRef = useRef(null)
+  const scrollTimeoutRef = useRef(null)
+  const isScrollingRef = useRef(false)
 
   useEffect(() => {
     fetch(API_URL)
@@ -51,6 +52,11 @@ export default function Home() {
     if (el) {
       const headerHeight = 120
       const top = el.getBoundingClientRect().top + window.pageYOffset - headerHeight
+      isScrollingRef.current = true
+      if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current)
+      scrollTimeoutRef.current = setTimeout(() => {
+        isScrollingRef.current = false
+      }, 600)
       window.scrollTo({ top, behavior: 'smooth' })
     }
   }, [])
@@ -59,6 +65,7 @@ export default function Home() {
     if (!data?.categorias || loading) return
 
     observerRef.current = new IntersectionObserver((entries) => {
+      if (isScrollingRef.current) return
       const visible = entries.filter(e => e.isIntersecting)
       if (visible.length > 0) {
         const id = visible[0].target.dataset.categoryId
@@ -75,6 +82,7 @@ export default function Home() {
     })
 
     return () => {
+      if (scrollTimeoutRef.current) clearTimeout(scrollTimeoutRef.current)
       if (observerRef.current) observerRef.current.disconnect()
     }
   }, [data, loading])
