@@ -6,7 +6,7 @@ import {
 } from 'lucide-react'
 import { ExpandableTabs } from './ui/expandable-tabs'
 import { Categoria, Comercio } from '../types'
-import { calcularEstado } from '../utils/status'
+import { calcularEstado, getHorarioDelDia } from '../utils/status'
 
 const ICON_MAP: Record<string, LucideIcon> = {
   'Helados': IceCream,
@@ -36,11 +36,14 @@ export default function Header({
   if (!comercio) return null
 
   const [estado, setEstado] = useState<string | null>(null)
+  const [horarioDisplay, setHorarioDisplay] = useState<string>('')
 
   useEffect(() => {
     setEstado(calcularEstado(comercio.horarios))
+    setHorarioDisplay(getHorarioDelDia(comercio.horarios))
     const id = setInterval(() => {
       setEstado(calcularEstado(comercio.horarios))
+      setHorarioDisplay(getHorarioDelDia(comercio.horarios))
     }, 60000)
     return () => clearInterval(id)
   }, [comercio.horarios])
@@ -76,7 +79,7 @@ export default function Header({
                 <span className="text-white/20">•</span>
               </>
             )}
-            <span>{comercio.horario}</span>
+            <span>{horarioDisplay || comercio.horario}</span>
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Comercio } from '../types'
-import { calcularEstado } from '../utils/status'
+import { calcularEstado, formatCierre } from '../utils/status'
 
 interface InfoModalProps {
   show: boolean
@@ -205,7 +205,7 @@ export default function InfoModal({ show, onClose, comercio }: InfoModalProps) {
                       <span className={`text-xs ${
                         isToday ? 'text-desert-400 font-semibold' : 'text-white/40'
                       }`}>
-                        {item.apertura} - {item.cierre}
+                        {formatCierre(item.apertura)} - {formatCierre(item.cierre)}
                       </span>
                     </div>
                   </div>

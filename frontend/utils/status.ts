@@ -28,3 +28,16 @@ export function calcularEstado(horarios: Horario[] | undefined): string {
 
   return horaActual >= apertura && horaActual < cierre ? 'Abierto' : 'Cerrado'
 }
+
+export function formatCierre(cierre: string): string {
+  return cierre.toLowerCase() === 'medianoche' ? '12:00 AM' : cierre
+}
+
+export function getHorarioDelDia(horarios: Horario[] | undefined): string {
+  if (!horarios || horarios.length === 0) return ''
+  const ahora = new Date()
+  const diaActual = DIAS[ahora.getDay()]
+  const hoy = horarios.find(h => h.dia === diaActual)
+  if (!hoy) return ''
+  return `${hoy.apertura} - ${formatCierre(hoy.cierre)}`
+}
