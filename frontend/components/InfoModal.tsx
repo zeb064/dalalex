@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Comercio } from '../types'
+import { calcularEstado } from '../utils/status'
 
 interface InfoModalProps {
   show: boolean
@@ -9,6 +10,15 @@ interface InfoModalProps {
 
 export default function InfoModal({ show, onClose, comercio }: InfoModalProps) {
   const [hoy, setHoy] = useState(-1)
+  const [estado, setEstado] = useState<string>('Cerrado')
+
+  useEffect(() => {
+    setEstado(calcularEstado(comercio?.horarios))
+    const id = setInterval(() => {
+      setEstado(calcularEstado(comercio?.horarios))
+    }, 60000)
+    return () => clearInterval(id)
+  }, [comercio?.horarios])
 
   useEffect(() => {
     if (show) {
@@ -24,6 +34,7 @@ export default function InfoModal({ show, onClose, comercio }: InfoModalProps) {
   if (!show) return null
 
   const horarios = comercio?.horarios || []
+  const abierto = estado === 'Abierto'
 
   return (
     <div
@@ -57,9 +68,9 @@ export default function InfoModal({ show, onClose, comercio }: InfoModalProps) {
           <div className="py-1 pb-3">
             <div className="flex items-start justify-between">
               <div className="flex flex-col gap-2">
-                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-sm font-semibold text-emerald-400 w-fit">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400 inline-block animate-pulse" />
-                  <span>{comercio?.estado || 'Abierto'}</span>
+                <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-sm font-semibold w-fit ${abierto ? 'bg-emerald-500/10 text-emerald-400' : 'bg-red-500/10 text-red-400'}`}>
+                  <span className={`w-2 h-2 rounded-full inline-block animate-pulse ${abierto ? 'bg-emerald-400' : 'bg-red-400'}`} />
+                  <span>{estado}</span>
                 </div>
                 <h3 className="text-2xl font-extrabold text-white tracking-tight">{comercio?.nombre || 'Dalalex'}</h3>
               </div>
