@@ -1,6 +1,13 @@
 import { useEffect, useState } from 'react'
+import { Comercio } from '../types'
 
-export default function InfoModal({ show, onClose, comercio }) {
+interface InfoModalProps {
+  show: boolean
+  onClose: () => void
+  comercio: Comercio | null
+}
+
+export default function InfoModal({ show, onClose, comercio }: InfoModalProps) {
   const [hoy, setHoy] = useState(-1)
 
   useEffect(() => {
@@ -19,13 +26,26 @@ export default function InfoModal({ show, onClose, comercio }) {
   const horarios = comercio?.horarios || []
 
   return (
-    <div className="modal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-label="Información del comercio">
-      <div className="modal-content" onClick={e => e.stopPropagation()}>
-        <div className="modal-handle" />
+    <div
+      className="fixed inset-0 bg-black/60 z-[100] flex items-end lg:items-center justify-center animate-[fadeIn_0.2s_ease]"
+      onClick={onClose}
+      role="dialog"
+      aria-modal="true"
+      aria-label="Información del comercio"
+    >
+      <div
+        className="bg-night-700 border border-white/10 rounded-3xl rounded-b-none lg:rounded-3xl w-full lg:w-[480px] max-h-[88vh] lg:max-h-[80vh] flex flex-col overflow-hidden animate-[slideUp_0.35s_cubic-bezier(0.32,0.72,0,1)] lg:animate-[modalScale_0.3s_cubic-bezier(0.32,0.72,0,1)]"
+        onClick={e => e.stopPropagation()}
+      >
+        <div className="w-10 h-1 rounded-full bg-white/20 mx-auto mt-2.5 mb-0 shrink-0 lg:hidden" />
 
-        <div className="modal-header">
-          <h2>Información</h2>
-          <button className="modal-close" onClick={onClose} aria-label="Cerrar">
+        <div className="flex items-center justify-between px-5 pt-1 pb-4 shrink-0">
+          <h2 className="text-xl font-bold text-white">Información</h2>
+          <button
+            className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-sm text-white/80 hover:bg-white/20 transition-colors"
+            onClick={onClose}
+            aria-label="Cerrar"
+          >
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
               <line x1="18" y1="6" x2="6" y2="18" />
               <line x1="6" y1="6" x2="18" y2="18" />
@@ -33,27 +53,27 @@ export default function InfoModal({ show, onClose, comercio }) {
           </button>
         </div>
 
-        <div className="modal-body">
-          {/* Perfil del comercio */}
-          <div className="info-profile">
-            <div className="info-profile-main">
-              <div className="info-profile-text">
-                <div className="info-status-badge">
-                  <span className="info-status-dot" />
+        <div className="px-5 overflow-y-auto flex-1">
+          <div className="py-1 pb-3">
+            <div className="flex items-start justify-between">
+              <div className="flex flex-col gap-2">
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-sm font-semibold text-emerald-400 w-fit">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400 inline-block animate-pulse" />
                   <span>{comercio?.estado || 'Abierto'}</span>
                 </div>
-                <h3 className="info-store-name">{comercio?.nombre || 'Dalalex'}</h3>
+                <h3 className="text-2xl font-extrabold text-white tracking-tight">{comercio?.nombre || 'Dalalex'}</h3>
               </div>
-              <div className="info-logo">
+              <div className="w-14 h-14 rounded-full bg-desert-500/20 text-desert-400 flex items-center justify-center text-2xl font-extrabold shrink-0">
                 {comercio?.nombre?.charAt(0) || 'D'}
               </div>
             </div>
-            <div className="info-social">
+
+            <div className="flex gap-2.5 mt-3.5">
               <a
                 href={comercio?.instagram || 'https://www.instagram.com/dalalex_3'}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="info-social-btn"
+                className="w-11 h-11 rounded-xl border border-white/10 flex items-center justify-center text-white/40 hover:text-white/60 hover:border-white/20 hover:bg-white/5 transition-all"
                 aria-label="Instagram"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -64,7 +84,7 @@ export default function InfoModal({ show, onClose, comercio }) {
                 href={comercio?.facebook || 'https://www.facebook.com/profile.php?id=61576224881126&sk=about&locale=es_LA'}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="info-social-btn"
+                className="w-11 h-11 rounded-xl border border-white/10 flex items-center justify-center text-white/40 hover:text-white/60 hover:border-white/20 hover:bg-white/5 transition-all"
                 aria-label="Facebook"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -75,7 +95,7 @@ export default function InfoModal({ show, onClose, comercio }) {
                 href={`https://wa.me/${comercio?.telefono || '573001234567'}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="info-social-btn"
+                className="w-11 h-11 rounded-xl border border-white/10 flex items-center justify-center text-white/40 hover:text-white/60 hover:border-white/20 hover:bg-white/5 transition-all"
                 aria-label="WhatsApp"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -85,41 +105,39 @@ export default function InfoModal({ show, onClose, comercio }) {
             </div>
           </div>
 
-          <div className="info-divider" />
+          <div className="h-px bg-white/5 my-1" />
 
-          {/* Dirección */}
-          <section className="info-section">
-            <h4 className="info-section-title">Dirección</h4>
-            <div className="info-address-row">
-              <svg className="info-address-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2196F3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <section className="py-1 pb-3">
+            <h4 className="text-sm font-bold text-white/80 mb-3">Dirección</h4>
+            <div className="flex items-start gap-2.5">
+              <svg className="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4956A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
-              <span className="info-address-text">{comercio?.direccion || 'Cl. 12 #15-50, Valledupar, Cesar, Colombia'}</span>
+              <span className="text-sm text-white/60 leading-relaxed">{comercio?.direccion || 'Cl. 12 #15-50, Valledupar, Cesar, Colombia'}</span>
             </div>
           </section>
 
-          <div className="info-divider" />
+          <div className="h-px bg-white/5 my-1" />
 
-          {/* Tipos de servicio */}
-          <section className="info-section">
-            <h4 className="info-section-title">Tipos de servicio</h4>
-            <div className="info-service-card info-service-selected">
-              <div className="info-service-left">
-                <svg className="info-service-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2196F3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <section className="py-1 pb-3">
+            <h4 className="text-sm font-bold text-white/80 mb-3">Tipos de servicio</h4>
+            <div className="flex items-center justify-between p-3.5 rounded-xl border border-desert-500/20 bg-desert-500/5 mb-2">
+              <div className="flex items-center gap-3">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C4956A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="1" y="3" width="15" height="13" rx="2" />
                   <polygon points="16 8 20 8 23 11 23 16 16 16 16 8" />
                   <circle cx="5.5" cy="18.5" r="2.5" />
                   <circle cx="18.5" cy="18.5" r="2.5" />
                 </svg>
-                <span className="info-service-label">A domicilio</span>
+                <span className="text-sm font-bold text-white/80">A domicilio</span>
               </div>
-              <svg className="info-service-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
             {comercio?.servicio_domicilio?.disponible && (
-              <div className="info-delivery-alert">
+              <div className="flex items-center gap-2 px-3.5 py-2.5 rounded-xl bg-red-500/5 mb-3 text-xs font-medium text-white/60">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#E53935" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <circle cx="12" cy="12" r="10" />
                   <line x1="12" y1="8" x2="12" y2="12" />
@@ -128,42 +146,51 @@ export default function InfoModal({ show, onClose, comercio }) {
                 <span>Entrega por tan solo $ {comercio.servicio_domicilio.costo.toLocaleString('es-CO')}</span>
               </div>
             )}
-            <div className="info-service-card info-service-selected">
-              <div className="info-service-left">
-                <svg className="info-service-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2196F3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <div className="flex items-center justify-between p-3.5 rounded-xl border border-desert-500/20 bg-desert-500/5">
+              <div className="flex items-center gap-3">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C4956A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
                   <line x1="3" y1="6" x2="21" y2="6" />
                   <path d="M16 10a4 4 0 0 1-8 0" />
                 </svg>
-                <span className="info-service-label">Para llevar</span>
+                <span className="text-sm font-bold text-white/80">Para llevar</span>
               </div>
-              <svg className="info-service-check" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
           </section>
 
-          <div className="info-divider" />
+          <div className="h-px bg-white/5 my-1" />
 
-          {/* Horarios */}
-          <section className="info-section">
-            <h4 className="info-section-title">Horarios de atención</h4>
-            <div className="info-schedule-list">
+          <section className="py-1 pb-3">
+            <h4 className="text-sm font-bold text-white/80 mb-3">Horarios de atención</h4>
+            <div className="flex flex-col gap-0.5">
               {horarios.map((item, index) => {
                 const isToday = index === hoy
                 return (
                   <div
                     key={item.dia}
-                    className={`info-schedule-row ${isToday ? 'info-schedule-today' : ''}`}
+                    className={`flex items-center justify-between px-3.5 py-2.5 rounded-xl transition-all ${
+                      isToday ? 'bg-desert-500/10' : ''
+                    }`}
                     aria-current={isToday ? 'true' : undefined}
                   >
-                    <span className="info-schedule-day">{item.dia}</span>
-                    <div className="info-schedule-time">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={isToday ? '#2196F3' : '#9E9E9E'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <span className={`text-sm font-medium ${
+                      isToday ? 'text-desert-400 font-bold' : 'text-white/80'
+                    }`}>
+                      {item.dia}
+                    </span>
+                    <div className="flex items-center gap-1.5">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={isToday ? '#C4956A' : '#ffffff40'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <circle cx="12" cy="12" r="10" />
                         <polyline points="12 6 12 12 16 14" />
                       </svg>
-                      <span>{item.apertura} - {item.cierre}</span>
+                      <span className={`text-xs ${
+                        isToday ? 'text-desert-400 font-semibold' : 'text-white/40'
+                      }`}>
+                        {item.apertura} - {item.cierre}
+                      </span>
                     </div>
                   </div>
                 )
@@ -171,7 +198,7 @@ export default function InfoModal({ show, onClose, comercio }) {
             </div>
           </section>
 
-          <div className="info-modal-footer">
+          <div className="text-center text-[10px] text-white/20 py-5 tracking-wider">
             Dalalex © {new Date().getFullYear()}
           </div>
         </div>

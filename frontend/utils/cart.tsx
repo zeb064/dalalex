@@ -1,15 +1,42 @@
-import React, { createContext, useContext, useReducer, useEffect } from 'react'
+import React, { createContext, useContext, useReducer, useEffect, ReactNode } from 'react'
+import { CartItem } from '../types'
 
-const CartContext = createContext()
+interface CartState {
+  items: CartItem[]
+}
+
+type CartAction =
+  | { type: 'ADD_ITEM'; payload: CartItem }
+  | { type: 'REMOVE_ITEM'; payload: string }
+  | { type: 'REMOVE_ENTIRELY'; payload: string }
+  | { type: 'CLEAR' }
+  | { type: 'LOAD'; payload: CartItem[] }
+
+interface CartContextValue {
+  items: CartItem[]
+  addItem: (
+    product: CartItem,
+    optionIndex?: number,
+    optionNombre?: string | null,
+    optionPrecio?: number
+  ) => void
+  removeItem: (cartKey: string) => void
+  removeEntirely: (cartKey: string) => void
+  clearCart: () => void
+  totalItems: number
+  totalPrice: number
+}
+
+const CartContext = createContext<CartContextValue | null>(null)
 
 const STORAGE_KEY = 'dalalex-cart'
 
-function generateCartKey(productId, optionIndex) {
+function generateCartKey(productId: string, optionIndex?: number): string {
   if (optionIndex === undefined || optionIndex === null) return productId
   return `${productId}-${optionIndex}`
 }
 
-function cartReducer(state, action) {
+function cartReducer(state: CartState, action: CartAction): CartState {
   switch (action.type) {
     case 'ADD_ITEM': {
       const existing = state.items.find(item => item._cartKey === action.payload._cartKey)
@@ -20,12 +47,12 @@ function cartReducer(state, action) {
             item._cartKey === action.payload._cartKey
               ? { ...item, quantity: item.quantity + 1 }
               : item
-          )
+          ),
         }
       }
       return {
         ...state,
-        items: [...state.items, { ...action.payload, quantity: 1 }]
+        items: [...state.items, { ...action.payload, quantity: 1 }],
       }
     }
     case 'REMOVE_ITEM': {
@@ -37,18 +64,18 @@ function cartReducer(state, action) {
             item._cartKey === action.payload
               ? { ...item, quantity: item.quantity - 1 }
               : item
-          )
+          ),
         }
       }
       return {
         ...state,
-        items: state.items.filter(item => item._cartKey !== action.payload)
+        items: state.items.filter(item => item._cartKey !== action.payload),
       }
     }
     case 'REMOVE_ENTIRELY':
       return {
         ...state,
-        items: state.items.filter(item => item._cartKey !== action.payload)
+        items: state.items.filter(item => item._cartKey !== action.payload),
       }
     case 'CLEAR':
       return { ...state, items: [] }
@@ -59,7 +86,7 @@ function cartReducer(state, action) {
   }
 }
 
-export function CartProvider({ children }) {
+export function CartProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(cartReducer, { items: [] })
 
   useEffect(() => {
@@ -71,42 +98,42 @@ export function CartProvider({ children }) {
           dispatch({ type: 'LOAD', payload: parsed })
         }
       }
-    } catch (e) {}
+    } catch (e) { /* ignore */ }
   }, [])
 
   useEffect(() => {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(state.items))
   }, [state.items])
 
-  const addItem = (product, optionIndex, optionNombre, optionPrecio) => {
+  const addItem = (
+    product: CartItem,
+    optionIndex?: number,
+    optionNombre?: string | null,
+    optionPrecio?: number
+  ) => {
     const _cartKey = product._cartKey || generateCartKey(product.id, optionIndex)
-    const item = {
+    const item: CartItem = {
       ...product,
       _cartKey,
       _optionIndex: optionIndex,
-      precio: optionPrecio || product.precio || product.opciones?.[0]?.precio || 0,
-      opcionNombre: optionNombre || null
+      precio: optionPrecio ?? product.precio ?? product.opciones?.[0]?.precio ?? 0,
+      opcionNombre: optionNombre || undefined,
+      quantity: 1,
     }
     dispatch({ type: 'ADD_ITEM', payload: item })
   }
 
-  const removeItem = (cartKey) => dispatch({ type: 'REMOVE_ITEM', payload: cartKey })
-  const removeEntirely = (cartKey) => dispatch({ type: 'REMOVE_ENTIRELY', payload: cartKey })
+  const removeItem = (cartKey: string) => dispatch({ type: 'REMOVE_ITEM', payload: cartKey })
+  const removeEntirely = (cartKey: string) => dispatch({ type: 'REMOVE_ENTIRELY', payload: cartKey })
   const clearCart = () => dispatch({ type: 'CLEAR' })
 
   const totalItems = state.items.reduce((sum, item) => sum + item.quantity, 0)
-  const totalPrice = state.items.reduce((sum, item) => sum + (item.precio * item.quantity), 0)
+  const totalPrice = state.items.reduce((sum, item) => sum + item.precio * item.quantity, 0)
 
   return (
-    <CartContext.Provider value={{
-      items: state.items,
-      addItem,
-      removeItem,
-      removeEntirely,
-      clearCart,
-      totalItems,
-      totalPrice
-    }}>
+    <CartContext.Provider
+      value={{ items: state.items, addItem, removeItem, removeEntirely, clearCart, totalItems, totalPrice }}
+    >
       {children}
     </CartContext.Provider>
   )
@@ -120,6 +147,6 @@ export function useCart() {
   return context
 }
 
-export function formatPrice(price) {
+export function formatPrice(price: number) {
   return '$' + Number(price).toLocaleString('es-CO')
 }
