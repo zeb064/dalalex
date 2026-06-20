@@ -11,6 +11,10 @@ export default class MyDocument extends Document {
           <meta name="theme-color" content="#0A0A08" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+          <meta name="mobile-web-app-capable" content="yes" />
+          <link rel="manifest" href="/manifest.json" />
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+          <meta name="application-name" content="Dalalex" />
         </Head>
         <body>
           <Main />

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Image from 'next/image'
 import { useCart, formatPrice } from '../utils/cart'
 import { Producto } from '../types'
 import ProductOptionModal from './ProductOptionModal'
@@ -61,13 +62,23 @@ export default function ProductCard({ product, onAddToCart }: ProductCardProps) 
     <>
       <div className="group rounded-2xl overflow-hidden bg-white/5 backdrop-blur-md border border-white/5 transition-all duration-200 hover:bg-white/[0.07] hover:border-white/10 hover:-translate-y-0.5 hover:shadow-xl">
         <div className="relative aspect-[4/3] overflow-hidden bg-white/5">
-          {product.imagen && (
-            <img
-              className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          {product.imagen ? (
+            <Image
+              className="object-cover transition-transform duration-300 group-hover:scale-105"
               src={product.imagen}
               alt={product.nombre}
+              fill
+              sizes="(max-width: 768px) 50vw, 25vw"
               loading="lazy"
             />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-white/10">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </div>
           )}
         </div>
         <div className="p-2.5 md:p-3 flex flex-col gap-1 flex-1">

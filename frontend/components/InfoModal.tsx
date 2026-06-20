@@ -109,13 +109,18 @@ export default function InfoModal({ show, onClose, comercio }: InfoModalProps) {
 
           <section className="py-1 pb-3">
             <h4 className="text-sm font-bold text-white/80 mb-3">Dirección</h4>
-            <div className="flex items-start gap-2.5">
+            <a
+              href={`https://www.google.com/maps/search/${encodeURIComponent(comercio?.direccion || 'Cl. 12 #15-50, Valledupar, Cesar, Colombia')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-2.5 hover:bg-white/5 rounded-xl p-1 -mx-1 transition-colors"
+            >
               <svg className="shrink-0 mt-0.5" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C4956A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                 <circle cx="12" cy="10" r="3" />
               </svg>
-              <span className="text-sm text-white/60 leading-relaxed">{comercio?.direccion || 'Cl. 12 #15-50, Valledupar, Cesar, Colombia'}</span>
-            </div>
+              <span className="text-sm text-white/60 leading-relaxed underline underline-offset-2 decoration-white/10">{comercio?.direccion || 'Cl. 12 #15-50, Valledupar, Cesar, Colombia'}</span>
+            </a>
           </section>
 
           <div className="h-px bg-white/5 my-1" />

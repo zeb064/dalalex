@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback, useRef } from 'react'
+import Head from 'next/head'
 import { motion } from 'framer-motion'
 import dynamic from 'next/dynamic'
 import Header from '../components/Header'
@@ -7,6 +8,7 @@ import CartFAB from '../components/CartFAB'
 import CheckoutModal from '../components/CheckoutModal'
 import InfoModal from '../components/InfoModal'
 import SkeletonCard from '../components/SkeletonCard'
+import ErrorBoundary from '../components/ErrorBoundary'
 import type { ProductsData } from '../types'
 import type { WaveSettings } from '../components/three/WaveBackground'
 
@@ -31,6 +33,7 @@ export default function Home() {
     rippleEnabled: false,
     auroraEnabled: true,
   })
+  const [sceneDisabled, setSceneDisabled] = useState(false)
   const categoryRefs = useRef<Record<string, HTMLElement | null>>({})
   const observerRef = useRef<IntersectionObserver | null>(null)
   const scrollRef = useRef(0)
@@ -86,6 +89,17 @@ export default function Home() {
         })
       }
     }
+  }, [])
+
+  useEffect(() => {
+    const isMobile = window.innerWidth < 768
+    const isLowPerf = isMobile && (
+      'deviceMemory' in navigator && (navigator as any).deviceMemory <= 4
+    )
+    if (isLowPerf) setSceneDisabled(true)
+
+    const saved = localStorage.getItem('dalalex-3d')
+    if (saved !== null) setSceneDisabled(saved === '0')
   }, [])
 
   const showToast = useCallback((msg: string) => {
@@ -150,8 +164,21 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <title>Dalalex - Heladería y Restaurante en Valledupar</title>
+        <meta name="description" content="Tu tienda de confianza con los mejores productos y servicio rápido. Hacemos entregas en Valledupar y área metropolitana." />
+        <meta property="og:title" content="Dalalex - Heladería y Restaurante" />
+        <meta property="og:description" content="Tu tienda de confianza con los mejores productos y servicio rápido en Valledupar." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dalalex.vercel.app" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <script defer data-domain="dalalex.vercel.app" src="https://plausible.io/js/script.js" />
+      </Head>
+
       <div className="fixed inset-0 -z-10">
-        <Scene3D scrollRef={scrollRef} waveSettings={waveSettings} />
+        <ErrorBoundary>
+          <Scene3D scrollRef={scrollRef} waveSettings={waveSettings} disabled={sceneDisabled} />
+        </ErrorBoundary>
       </div>
 
       <div className="relative z-10 min-h-screen pb-24">
@@ -201,6 +228,32 @@ export default function Home() {
         </div>
 
         <CartFAB onClick={() => setShowCart(true)} />
+
+        <button
+          className="fixed bottom-20 right-5 z-40 w-8 h-8 rounded-full bg-[#121210]/60 backdrop-blur-xl border border-white/10 flex items-center justify-center text-white/30 hover:text-white/60 hover:border-white/20 transition-all text-[10px]"
+          onClick={() => {
+            setSceneDisabled(prev => {
+              const next = !prev
+              localStorage.setItem('dalalex-3d', next ? '0' : '1')
+              return next
+            })
+          }}
+          aria-label={sceneDisabled ? 'Activar fondo 3D' : 'Desactivar fondo 3D'}
+          title={sceneDisabled ? 'Activar fondo 3D' : 'Desactivar fondo 3D'}
+        >
+          {sceneDisabled ? (
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polygon points="11 19 2 12 11 5 11 19" />
+              <polygon points="22 19 13 12 22 5 22 19" />
+            </svg>
+          ) : (
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <polygon points="11 19 2 12 11 5 11 19" />
+              <polygon points="22 19 13 12 22 5 22 19" />
+              <line x1="23" y1="1" x2="1" y2="23" />
+            </svg>
+          )}
+        </button>
 
         <CheckoutModal
           show={showCart}

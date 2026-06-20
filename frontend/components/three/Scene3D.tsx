@@ -43,10 +43,13 @@ function SceneContent({ scrollProgress, waveSettings }: {
   )
 }
 
-export default function Scene3D({ scrollRef, waveSettings }: {
+export default function Scene3D({ scrollRef, waveSettings, disabled }: {
   scrollRef: React.MutableRefObject<number>
   waveSettings: WaveSettings
+  disabled?: boolean
 }) {
+  if (disabled) return null
+
   return (
     <div className="fixed inset-0 w-full h-full -z-10">
       <Canvas
