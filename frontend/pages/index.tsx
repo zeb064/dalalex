@@ -12,7 +12,7 @@ import type { WaveSettings } from '../components/three/WaveBackground'
 
 const Scene3D = dynamic(() => import('../components/three/Scene3D'), { ssr: false })
 
-const API_URL = 'http://localhost:3001/api/products'
+const API_URL = '/api/products'
 
 export default function Home() {
   const [data, setData] = useState<ProductsData | null>(null)
