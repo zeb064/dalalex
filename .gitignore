@@ -3,4 +3,5 @@ frontend/node_modules/
 .next/
 frontend/.next/
 *.log
+*.tsbuildinfo
 .env*
