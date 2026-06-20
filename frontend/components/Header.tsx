@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import {
   IceCream, Salad, CupSoda, Sandwich,
   Coffee, Snowflake, Apple, CookingPot,
@@ -62,7 +63,16 @@ export default function Header({
 }: HeaderProps) {
   if (!comercio) return null
 
-  const estado = calcularEstado(comercio.horarios)
+  const [estado, setEstado] = useState<string | null>(null)
+
+  useEffect(() => {
+    setEstado(calcularEstado(comercio.horarios))
+    const id = setInterval(() => {
+      setEstado(calcularEstado(comercio.horarios))
+    }, 60000)
+    return () => clearInterval(id)
+  }, [comercio.horarios])
+
   const abierto = estado === 'Abierto'
 
   const tabs = categorias
@@ -87,9 +97,13 @@ export default function Header({
             </h1>
           </div>
           <div className="flex items-center gap-1.5 text-xs text-white/50 font-medium">
-            <span className={`w-2 h-2 rounded-full inline-block animate-pulse ${abierto ? 'bg-emerald-400' : 'bg-red-400'}`} />
-            <span className={abierto ? 'text-emerald-400' : 'text-red-400'}>{estado}</span>
-            <span className="text-white/20">•</span>
+            {estado && (
+              <>
+                <span className={`w-2 h-2 rounded-full inline-block animate-pulse ${abierto ? 'bg-emerald-400' : 'bg-red-400'}`} />
+                <span className={abierto ? 'text-emerald-400' : 'text-red-400'}>{estado}</span>
+                <span className="text-white/20">•</span>
+              </>
+            )}
             <span>{comercio.horario}</span>
           </div>
         </div>
